@@ -1,0 +1,64 @@
+{
+  "propertyEditors": [
+    {
+      "name": "SEO Metadata",
+      "alias": "Epiphany.SeoMetadata",
+      "editor": {
+        "valueType": "JSON",
+        "view": "~/App_Plugins/Epiphany.SeoMetadata/views/epiphany.seo.metadata.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Allow long titles",
+            "description": "If ticked, long titles will not invalidate the form",
+            "key": "allowLongTitles",
+            "view": "boolean"
+          },
+          {
+            "label": "Allow long descriptions",
+            "description": "If ticked, long descriptions will not invalidate the form",
+            "key": "allowLongDescriptions",
+            "view": "boolean"
+          },
+          {
+            "label": "SERP Title Length",
+            "description": "The length that Google starts stripping/hiding characters. 65 is roughly where Google will start truncating the title.",
+            "key": "serpTitleLength",
+            "view": "number"
+          },
+          {
+            "label": "SERP Description Length",
+            "description": "The length that Google starts stripping/hiding characters. 150 characters is roughly where Google will start truncating the description.",
+            "key": "serpDescriptionLength",
+            "view": "number"
+          },
+          {
+            "label": "Developer Name",
+            "description": "The name of the agency (for example, \"Epiphany\") to show on the control. This is used in the help descriptions.",
+            "key": "developerName",
+            "view": "textstring"
+          },
+          {
+            "label": "Site Title",
+            "description": "The default title that should be appended to the title e.g. &nbsp;| My Company",
+            "key": "siteTitle",
+            "view": "textstring"
+          },
+          {
+            "label": "Do Not Index explanation",
+            "description": "An explanation what the effect of checking 'Do Not Index' is. This is used in the help description.",
+            "key": "doNotIndexExplanation",
+            "view": "textstring"
+          }
+        ]
+      }
+    }
+  ],
+  "css": [
+    "~/App_Plugins/Epiphany.SeoMetadata/css/epiphany.seo.metadata.css"
+  ],
+  "javascript": [
+    "~/App_Plugins/Epiphany.SeoMetadata/js/epiphany.seo.metadata.js"
+  ]
+}

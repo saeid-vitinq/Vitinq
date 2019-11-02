@@ -1,0 +1,116 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Umbraco.Web.Models;
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = null;
+    DynamicPublishedContent main = Umbraco.ContentAtRoot( ).First( );
+    MainPage mainPage = main.Children( ).First( ).Parent as MainPage;
+    MainPageDT mainPageDT = mainPage.Main.Current as MainPageDT;
+
+    string title = "";
+    string description = "";
+    string pageUrl = CurrentPage.Url;
+
+    bool noIndex = CurrentPage.SeoMain.Current == null || CurrentPage.SeoMain.Current.NoIndex;
+
+    if( !noIndex )
+    {
+        title = CurrentPage.SeoMain.Current.Title;
+        description = CurrentPage.SeoMain.Current.Description;
+
+    }
+
+    if( CurrentPage.DocumentTypeAlias == "MainPage" && pageUrl.IndexOf("tr") == -1 && pageUrl.IndexOf( "fr" ) == -1 && pageUrl.IndexOf( "de" ) == -1 && pageUrl.IndexOf( "fa" ) == -1 )
+    {
+        pageUrl.EnsureEndsWith( "/" );
+        pageUrl += "en/";
+    }
+    string changedTexts = string.Join( ",", mainPageDT.ChangedTexts );
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@Html.Raw(title)</title>
+    <link rel="canonical" href="@pageUrl" />
+    <meta name="description" content="@description" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    @*<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">*@
+
+    <link rel="stylesheet" href="/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="site-wrap">
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        @*<div class="border-bottom top-bar py-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-0">
+                                <span class="mr-3"><strong>@Umbraco.GetDictionaryValue("Phone"):</strong> <a href="tel://#">@mainPage.PhoneNumber</a></span>
+                                <span><strong>@Umbraco.GetDictionaryValue("Email"):</strong><a href="#">@mainPage.Email</a></span>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="social-media">
+                                <li><a href="@mainPage.Facebook" class="p-2"><span class="icon-facebook"></span></a></li>
+                                <li><a href="@mainPage.Twitter" class="p-2"><span class="icon-twitter"></span></a></li>
+                                <li><a href="@mainPage.Instagram" class="p-2"><span class="icon-instagram"></span></a></li>
+                                <li><a href="@mainPage.LinkedIn" class="p-2"><span class="icon-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </div>
+    @Html.Partial( "/Views/Partials/Header.cshtml" )
+    @RenderBody( )
+    @Html.Partial( "/Views/Partials/Footer.cshtml" )
+    <script src="/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/scripts/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/scripts/jquery-ui.js"></script>
+    <script src="/scripts/popper.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/owl.carousel.min.js"></script>
+    <script src="/scripts/jquery.stellar.min.js"></script>
+    <script src="/scripts/jquery.countdown.min.js"></script>
+    <script src="/scripts/jquery.magnific-popup.min.js"></script>
+    <script src="/scripts/bootstrap-datepicker.min.js"></script>
+    <script src="/scripts/aos.js"></script>
+    <script src="/scripts/typed.js"></script>
+    <script>
+        var typed = new Typed('.typed-words', {
+
+            strings: [@Html.Raw(changedTexts)],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+        });
+    </script>
+    <script src="/scripts/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+.seo-metadata-container input[name=title] {
+  width: 90%; }
+
+.seo-metadata-container label {
+  padding-left: 0; }
+
+.seo-metadata-container .title-length {
+  font-size: 0.75em;
+  color: #ccc;
+  top: -5px;
+  position: relative; }
+
+.seo-metadata-container .help-block {
+  margin: 10px 0 35px 0;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.5;
+  max-width: 90%; }
+  .seo-metadata-container .help-block p {
+    margin-bottom: 14px; }
+
+.seo-metadata-container .error {
+  color: #b94a48; }
+
+.seo-metadata-container textarea {
+  width: 90%;
+  height: 97px; }
+
+@media (max-width: 1500px) {
+  .seo-metadata-container .controls-col {
+    width: 100%; } }
+
+.seo-metadata-container .serp-col {
+  padding-left: 30px;
+  position: relative; }
+  @media (max-width: 1500px) {
+    .seo-metadata-container .serp-col {
+      margin-left: 210px !important;
+      clear: left;
+      width: 70%; } }
+  .seo-metadata-container .serp-col .serp-preview-label {
+    font-size: 1em;
+    font-weight: bold;
+    display: none;
+    border-bottom: 1px #ccc solid; }
+    .seo-metadata-container .serp-col .serp-preview-label a {
+      cursor: pointer; }
+    @media (max-width: 1500px) {
+      .seo-metadata-container .serp-col .serp-preview-label {
+        display: block; } }
+
+.seo-metadata-container .serp-preview {
+  min-height: 120px;
+  max-width: 520px;
+  border-radius: 2px;
+  padding: 10px 0;
+  color: #1a0dab;
+  font-family: arial, sans-serif;
+  zoom: 1; }
+  .seo-metadata-container .serp-preview h3 {
+    font-size: 18px;
+    line-height: 21.600000381469727px;
+    margin: 0;
+    padding: 0; }
+  .seo-metadata-container .serp-preview a {
+    color: #006621;
+    line-height: 16px;
+    font-size: 13px; }
+    .seo-metadata-container .serp-preview a:hover, .seo-metadata-container .serp-preview a:visited {
+      text-decoration: none; }
+  .seo-metadata-container .serp-preview p {
+    margin: 0;
+    max-width: 504px;
+    color: #545454;
+    font-size: 13px;
+    line-height: 18.200000762939453px; }
+  .seo-metadata-container .serp-preview .listing {
+    margin: 23px 0; }

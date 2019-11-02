@@ -1,0 +1,1074 @@
+﻿ 2019-06-05 00:00:11,397 [P12620/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.13.2 application starting on KHATIBI
+ 2019-06-05 00:00:11,441 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-06-05 00:00:11,451 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 10ms)
+ 2019-06-05 00:00:11,538 [P12620/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-06-05 00:00:11,541 [P12620/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-06-05 00:00:11,543 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:11,896 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 353ms)
+ 2019-06-05 00:00:11,897 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-06-05 00:00:11,905 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 8ms)
+ 2019-06-05 00:00:11,930 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:11,931 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:11,931 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-06-05 00:00:11,940 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 8ms)
+ 2019-06-05 00:00:11,941 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:11,941 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:11,942 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-06-05 00:00:11,949 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 7ms)
+ 2019-06-05 00:00:11,967 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:11,967 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:11,968 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-06-05 00:00:11,974 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 6ms)
+ 2019-06-05 00:00:11,975 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:11,976 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:11,976 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-06-05 00:00:11,983 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 6ms)
+ 2019-06-05 00:00:13,684 [P12620/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-06-05 00:00:13,783 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Extensions.Models.Custom.Extract.PropertyExtractBase
+ 2019-06-05 00:00:13,794 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Extensions.Models.Custom.Extract.PropertyExtractBase (took 10ms)
+ 2019-06-05 00:00:13,850 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2019-06-05 00:00:13,859 [P12620/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 10ms)
+ 2019-06-05 00:00:13,870 [P12620/D2/T1] INFO  Epiphany.SeoMetadata.SeoMetadataStartup - Configured SeoMetadataUrlSegmentProvider
+ 2019-06-05 00:00:13,936 [P12620/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-06-05 00:00:14,116 [P12620/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-06-05 00:00:14,117 [P12620/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-06-05 00:00:14,135 [P12620/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2820ms)
+ 2019-06-05 00:00:14,350 [P12620/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:53834/vitinqpanel
+ 2019-06-05 00:00:14,352 [P12620/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:53834/vitinqpanel (UmbracoModule request)
+ 2019-06-05 00:00:14,609 [P12620/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2019-06-05 00:00:14,613 [P12620/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2019-06-05 00:00:14,752 [P12620/D2/T11] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:00:15,382 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:15,382 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:15,382 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-06-05 00:00:15,391 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 8ms)
+ 2019-06-05 00:00:15,497 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:15,498 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:15,498 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-06-05 00:00:15,509 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 11ms)
+ 2019-06-05 00:00:15,834 [P12620/D2/T11] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 1082ms)
+ 2019-06-05 00:00:17,789 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:17,789 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:17,789 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-06-05 00:00:17,796 [P12620/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 6ms)
+ 2019-06-05 00:00:32,311 [P12620/D2/T14] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username saied.khatibi@clockwork.com.tr from IP address ::1
+ 2019-06-05 00:00:32,312 [P12620/D2/T14] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: saied.khatibi@clockwork.com.tr logged in from IP address ::1
+ 2019-06-05 00:00:32,562 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:32,563 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:32,563 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2019-06-05 00:00:32,574 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 10ms)
+ 2019-06-05 00:00:32,640 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:32,641 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:32,641 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-06-05 00:00:32,649 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 7ms)
+ 2019-06-05 00:00:32,652 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:32,653 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:32,653 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2019-06-05 00:00:32,661 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 7ms)
+ 2019-06-05 00:00:41,587 [P12620/D2/T10] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:00:41,587 [P12620/D2/T10] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 0ms)
+ 2019-06-05 00:00:55,284 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:00:55,285 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:00:55,285 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2019-06-05 00:00:55,294 [P12620/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 8ms)
+ 2019-06-05 00:01:14,708 [P12620/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-06-04 00:01:14
+ 2019-06-05 00:02:18,926 [P12620/D2/T10] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:02:18,929 [P12620/D2/T10] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 2ms)
+ 2019-06-05 00:02:18,946 [P12620/D2/T10] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_Views_Contact_cshtml.Execute() in E:\Vitinq\Source\Vitinq\Vitinq\Views\Contact.cshtml:line 6
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2019-06-05 00:03:04,814 [P12620/D2/T10] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:03:04,814 [P12620/D2/T10] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 0ms)
+ 2019-06-05 00:03:06,982 [P12620/D2/T15] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:03:06,982 [P12620/D2/T15] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 0ms)
+ 2019-06-05 00:04:15,877 [P12620/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Contact' with Id '1190' has been published.
+ 2019-06-05 00:04:16,002 [P12620/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:04:16,003 [P12620/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:04:16,003 [P12620/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2019-06-05 00:04:16,015 [P12620/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 12ms)
+ 2019-06-05 00:04:16,116 [P12620/D2/T34] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:04:16,119 [P12620/D2/T34] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 2ms)
+ 2019-06-05 00:04:16,244 [P12620/D2/T17] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 00:04:16,244 [P12620/D2/T17] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 00:04:16,245 [P12620/D2/T17] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2019-06-05 00:04:16,251 [P12620/D2/T17] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 6ms)
+ 2019-06-05 00:04:18,421 [P12620/D2/T32] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:04:18,452 [P12620/D2/T32] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 31ms)
+ 2019-06-05 00:04:20,098 [P12620/D2/T31] INFO  umbraco.content - Save Xml to file...
+ 2019-06-05 00:04:20,118 [P12620/D2/T31] INFO  umbraco.content - Saved Xml to file.
+ 2019-06-05 00:04:24,729 [P12620/D2/T17] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:04:24,733 [P12620/D2/T17] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 3ms)
+ 2019-06-05 00:04:28,458 [P12620/D2/T12] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:04:28,462 [P12620/D2/T12] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 3ms)
+ 2019-06-05 00:04:31,630 [P12620/D2/T19] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:04:31,634 [P12620/D2/T19] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 3ms)
+ 2019-06-05 00:04:38,112 [P12620/D2/T17] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:04:38,116 [P12620/D2/T17] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 3ms)
+ 2019-06-05 00:05:41,561 [P12620/D2/T36] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:05:41,566 [P12620/D2/T36] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 4ms)
+ 2019-06-05 00:20:05,702 [P12620/D2/T161] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: saied.khatibi@clockwork.com.tr, IP Address: ::1
+ 2019-06-05 00:20:42,921 [P12620/D2/T161] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:20:42,925 [P12620/D2/T161] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 3ms)
+ 2019-06-05 00:21:01,164 [P12620/D2/T165] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 00:21:01,168 [P12620/D2/T165] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 4ms)
+ 2019-06-05 01:18:28,987 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-06-05 01:18:28,988 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-06-05 01:18:28,993 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2019-06-05 01:18:28,994 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2019-06-05 01:18:28,994 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-06-05 01:18:28,995 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-06-05 01:18:29,000 [P12620/D2/T48] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-06-05 01:18:29,002 [P12620/D2/T43] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-06-05 01:18:29,002 [P12620/D2/T37] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-06-05 01:18:29,002 [P12620/D2/T46] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2019-06-05 01:18:29,005 [P12620/D2/T48] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-06-05 01:18:29,307 [P12620/D2/T48] INFO  Umbraco.Web.ExamineStartup - Complete (took 302ms)
+ 2019-06-05 01:18:29,308 [P12620/D2/T48] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-06-05 01:18:29,308 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-06-05 01:18:29,308 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-06-05 01:18:29,309 [P12620/D2/T47] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-06-05 01:18:29,349 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-06-05 01:18:29,349 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-06-05 01:18:29,349 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2019-06-05 01:18:29,349 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2019-06-05 01:18:29,350 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2019-06-05 01:18:29,350 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-06-05 01:18:29,350 [P12620/D2/T48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-06-05 01:18:29,349 [P12620/D2/T49] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-06-05 01:18:29,350 [P12620/D2/T21] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-06-05 01:18:59,535 [P12620/D2/T48] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: BinDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+ 2019-06-05 01:30:19,929 [P12620/D3/T343] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.13.2 application starting on KHATIBI
+ 2019-06-05 01:30:19,955 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-06-05 01:30:19,969 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Hash determined (took 13ms)
+ 2019-06-05 01:30:20,029 [P12620/D3/T343] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-06-05 01:30:20,032 [P12620/D3/T343] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-06-05 01:30:20,034 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:20,383 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 349ms)
+ 2019-06-05 01:30:20,383 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-06-05 01:30:20,391 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 7ms)
+ 2019-06-05 01:30:20,411 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:20,412 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:30:20,412 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-06-05 01:30:20,419 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 6ms)
+ 2019-06-05 01:30:20,420 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:20,420 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:30:20,420 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-06-05 01:30:20,429 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 8ms)
+ 2019-06-05 01:30:20,445 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:20,446 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:30:20,446 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-06-05 01:30:20,455 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 9ms)
+ 2019-06-05 01:30:20,457 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:20,457 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:30:20,457 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-06-05 01:30:20,465 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 8ms)
+ 2019-06-05 01:30:21,799 [P12620/D3/T343] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-06-05 01:30:21,907 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Extensions.Models.Custom.Extract.PropertyExtractBase
+ 2019-06-05 01:30:21,917 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Extensions.Models.Custom.Extract.PropertyExtractBase (took 9ms)
+ 2019-06-05 01:30:21,998 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2019-06-05 01:30:22,006 [P12620/D3/T343] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 8ms)
+ 2019-06-05 01:30:22,018 [P12620/D3/T343] INFO  Epiphany.SeoMetadata.SeoMetadataStartup - Configured SeoMetadataUrlSegmentProvider
+ 2019-06-05 01:30:22,083 [P12620/D3/T343] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-06-05 01:30:22,837 [P12620/D3/T343] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-06-05 01:30:22,839 [P12620/D3/T343] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-06-05 01:30:22,856 [P12620/D3/T343] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3022ms)
+ 2019-06-05 01:30:23,062 [P12620/D3/T347] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:53834/vitinqpanel
+ 2019-06-05 01:30:23,064 [P12620/D3/T347] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:53834/vitinqpanel (UmbracoModule request)
+ 2019-06-05 01:30:23,256 [P12620/D3/T347] INFO  umbraco.content - Load Xml from file...
+ 2019-06-05 01:30:23,298 [P12620/D3/T347] INFO  umbraco.content - Loaded Xml from file.
+ 2019-06-05 01:30:23,398 [P12620/D3/T347] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 01:30:23,857 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:23,858 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:30:23,858 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-06-05 01:30:23,867 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 9ms)
+ 2019-06-05 01:30:24,241 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:24,242 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:30:24,242 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-06-05 01:30:24,252 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 10ms)
+ 2019-06-05 01:30:24,584 [P12620/D3/T347] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 1185ms)
+ 2019-06-05 01:30:27,867 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:30:27,868 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:30:27,868 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-06-05 01:30:27,875 [P12620/D3/T347] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 7ms)
+ 2019-06-05 01:30:46,214 [P12620/D3/T333] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 01:30:46,217 [P12620/D3/T333] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 3ms)
+ 2019-06-05 01:31:00,004 [P12620/D3/T351] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 01:31:00,007 [P12620/D3/T351] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 2ms)
+ 2019-06-05 01:31:23,391 [P12620/D3/T330] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 01:31:23,391 [P12620/D3/T330] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 01:31:23,392 [P12620/D3/T330] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2019-06-05 01:31:23,400 [P12620/D3/T330] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 7ms)
+ 2019-06-05 01:31:28,410 [P12620/D3/T330] INFO  umbraco.content - Save Xml to file...
+ 2019-06-05 01:31:28,428 [P12620/D3/T330] INFO  umbraco.content - Saved Xml to file.
+ 2019-06-05 16:58:21,925 [P13104/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.13.2 application starting on KHATIBI
+ 2019-06-05 16:58:22,172 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-06-05 16:58:22,222 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 50ms)
+ 2019-06-05 16:58:23,838 [P13104/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-06-05 16:58:23,842 [P13104/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-06-05 16:58:23,846 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:25,746 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1899ms)
+ 2019-06-05 16:58:25,746 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-06-05 16:58:25,754 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 7ms)
+ 2019-06-05 16:58:25,843 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:25,844 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:25,844 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-06-05 16:58:25,850 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 6ms)
+ 2019-06-05 16:58:25,880 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:25,880 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:25,880 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-06-05 16:58:25,888 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 7ms)
+ 2019-06-05 16:58:25,985 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:25,986 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:25,986 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-06-05 16:58:25,998 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 11ms)
+ 2019-06-05 16:58:25,999 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:25,999 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:26,000 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-06-05 16:58:26,007 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 7ms)
+ 2019-06-05 16:58:30,392 [P13104/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-06-05 16:58:32,026 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Extensions.Models.Custom.Extract.PropertyExtractBase
+ 2019-06-05 16:58:32,035 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Extensions.Models.Custom.Extract.PropertyExtractBase (took 9ms)
+ 2019-06-05 16:58:32,725 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2019-06-05 16:58:32,745 [P13104/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 20ms)
+ 2019-06-05 16:58:32,842 [P13104/D2/T1] INFO  Epiphany.SeoMetadata.SeoMetadataStartup - Configured SeoMetadataUrlSegmentProvider
+ 2019-06-05 16:58:33,687 [P13104/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-06-05 16:58:35,036 [P13104/D2/T1] INFO  Umbraco.Core.Persistence.Database - Create Table sql -1:
+ CREATE TABLE [Redirects] ([Id] INTEGER NOT NULL IDENTITY(1,1),
+[IsRegex] BIT NOT NULL,
+[OldUrl] NVARCHAR(255) NOT NULL,
+[NewUrl] NVARCHAR(255) NOT NULL,
+[LastUpdated] DATETIME NOT NULL,
+[Notes] NVARCHAR(255) NOT NULL)
+ 2019-06-05 16:58:35,144 [P13104/D2/T1] INFO  Umbraco.Core.Persistence.Database - Primary Key sql -1:
+ ALTER TABLE [Redirects] ADD CONSTRAINT [PK_Redirects] PRIMARY KEY CLUSTERED ([Id])
+ 2019-06-05 16:58:35,266 [P13104/D2/T1] INFO  Umbraco.Core.Persistence.Migrations.Initial.BaseDataCreation - Creating data in table Redirects
+ 2019-06-05 16:58:35,267 [P13104/D2/T1] INFO  Umbraco.Core.Persistence.Migrations.Initial.BaseDataCreation - Done creating data in table Redirects
+ 2019-06-05 16:58:35,468 [P13104/D2/T1] INFO  Umbraco.Core.Persistence.Database - New table 'Redirects' was created
+ 2019-06-05 16:58:39,390 [P13104/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-06-05 16:58:39,489 [P13104/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-06-05 16:58:39,510 [P13104/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 18195ms)
+ 2019-06-05 16:58:39,527 [P13104/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index InternalIndexSet to be unlocked since it was left in a locked state
+ 2019-06-05 16:58:39,529 [P13104/D2/T1] INFO  Umbraco.Web.ExamineStartup - Forcing index ExternalIndexSet to be unlocked since it was left in a locked state
+ 2019-06-05 16:58:40,481 [P13104/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://localhost:53834/vitinqpanel
+ 2019-06-05 16:58:40,483 [P13104/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:53834/vitinqpanel (UmbracoModule request)
+ 2019-06-05 16:58:44,838 [P13104/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2019-06-05 16:58:44,981 [P13104/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2019-06-05 16:58:47,796 [P13104/D2/T11] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 16:58:51,579 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:51,580 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:51,580 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-06-05 16:58:51,587 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 6ms)
+ 2019-06-05 16:58:52,516 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:52,517 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:52,517 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-06-05 16:58:52,578 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 60ms)
+ 2019-06-05 16:58:54,135 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:54,136 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:54,136 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-06-05 16:58:54,169 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 32ms)
+ 2019-06-05 16:58:55,651 [P13104/D2/T17] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:58:55,652 [P13104/D2/T17] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:58:55,653 [P13104/D2/T17] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2019-06-05 16:58:55,669 [P13104/D2/T17] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 16ms)
+ 2019-06-05 16:59:16,060 [P13104/D2/T11] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 28263ms)
+ 2019-06-05 16:59:19,868 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:59:19,869 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:59:19,869 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2019-06-05 16:59:19,878 [P13104/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 9ms)
+ 2019-06-05 16:59:27,914 [P13104/D2/T12] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username saied.khatibi@clockwork.com.tr from IP address ::1
+ 2019-06-05 16:59:27,918 [P13104/D2/T12] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: saied.khatibi@clockwork.com.tr logged in from IP address ::1
+ 2019-06-05 16:59:32,588 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:59:32,588 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:59:32,589 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2019-06-05 16:59:32,605 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 15ms)
+ 2019-06-05 16:59:32,639 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:59:32,640 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:59:32,640 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2019-06-05 16:59:32,640 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2019-06-05 16:59:32,643 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:59:32,643 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:59:32,644 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2019-06-05 16:59:32,653 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 9ms)
+ 2019-06-05 16:59:32,676 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 16:59:32,677 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 16:59:32,677 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2019-06-05 16:59:32,684 [P13104/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 7ms)
+ 2019-06-05 16:59:47,929 [P13104/D2/T14] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-06-04 16:59:45
+ 2019-06-05 17:00:21,294 [P13104/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-06-05 17:00:21,295 [P13104/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2019-06-05 17:00:21,295 [P13104/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2019-06-05 17:00:21,308 [P13104/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 12ms)
+ 2019-06-05 17:01:10,487 [P13104/D2/T12] INFO  umbraco.content - Save Xml to file...
+ 2019-06-05 17:01:10,595 [P13104/D2/T12] INFO  umbraco.content - Saved Xml to file.
+ 2019-06-05 17:06:36,587 [P13104/D2/T92] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Started TryFindContent
+ 2019-06-05 17:06:36,610 [P13104/D2/T92] INFO  Umbraco.Extensions.ContentFinders.MultilingualContentFinder - Completed TryFindContent (took 22ms)
+ 2019-06-05 17:07:09,670 [P13104/D2/T89] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Exception (9ef92b2e).
+System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.) ---> System.ComponentModel.Win32Exception (0x80004005): The semaphore timeout period has expired
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 235
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass5_0.<ExecuteReaderWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteReaderWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteReaderWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteReaderWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.<Query>d__74`1.MoveNext()
+ClientConnectionId:81694b83-6187-47f3-9a37-d5ca85ad7c9e
+Error Number:121,State:0,Class:20
+ 2019-06-05 17:07:09,735 [P13104/D2/T52] ERROR Our.Umbraco.Vorto.Web.Controllers.VortoApiController - Unhandled controller exception occurred
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.System.Data.IDbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.get_Database()
+   at Umbraco.Core.Persistence.Repositories.EntityRepository.PerformGetAllPaths(Guid objectTypeId, Action`1 filter)
+   at Umbraco.Core.Persistence.Repositories.EntityRepository.GetAllPaths(Guid objectTypeId, Int32[] ids)
+   at Umbraco.Core.Services.EntityService.GetAllPaths(UmbracoObjectTypes umbracoObjectType, Int32[] ids)
+   at Umbraco.Core.Models.UserExtensions.CombineStartNodes(UmbracoObjectTypes objectType, Int32[] groupSn, Int32[] userSn, IEntityService entityService)
+   at Umbraco.Core.Models.UserExtensions.CalculateContentStartNodeIds(IUser user, IEntityService entityService)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<>c__DisplayClass2_0.<CheckStaleData>b__4()
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<>c.<CheckStaleData>b__2_6(Func`1 check)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<CheckStaleData>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<OnActionExecutingAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ClientConnectionId:97fd0a9a-e8e5-4845-bbe7-c1e717348330
+Error Number:-2,State:0,Class:11
+ 2019-06-05 17:07:09,757 [P13104/D2/T78] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Exception (b1e85534).
+System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.) ---> System.ComponentModel.Win32Exception (0x80004005): The semaphore timeout period has expired
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at StackExchange.Profiling.Data.ProfiledDbCommand.ExecuteDbDataReader(CommandBehavior behavior) in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbCommand.cs:line 235
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass5_0.<ExecuteReaderWithRetry>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteReaderWithRetry(IDbCommand command, RetryPolicy cmdRetryPolicy, RetryPolicy conRetryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteReaderWithRetry(IDbCommand command, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoCommandExtensions.ExecuteReaderWithRetry(IDbCommand command)
+   at Umbraco.Core.Persistence.Database.<Query>d__74`1.MoveNext()
+ClientConnectionId:186749c5-73ec-4817-add0-659da6eb4d68
+Error Number:121,State:0,Class:20
+ 2019-06-05 17:07:10,040 [P13104/D2/T89] ERROR Our.Umbraco.Vorto.Web.Controllers.VortoApiController - Unhandled controller exception occurred
+System.InvalidOperationException: This SqlTransaction has completed; it is no longer usable.
+   at System.Data.SqlClient.SqlTransaction.ZombieCheck()
+   at System.Data.SqlClient.SqlTransaction.Commit()
+   at StackExchange.Profiling.Data.ProfiledDbTransaction.Commit() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbTransaction.cs:line 66
+   at Umbraco.Core.Persistence.Database.CleanupTransaction()
+   at Umbraco.Core.Scoping.Scope.DisposeLastScope()
+   at Umbraco.Core.Scoping.Scope.Dispose()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.DisposeResources()
+   at Umbraco.Core.DisposableObjectSlim.Dispose(Boolean disposing)
+   at Umbraco.Core.DisposableObjectSlim.Dispose()
+   at Umbraco.Core.Services.EntityService.GetAllPaths(UmbracoObjectTypes umbracoObjectType, Int32[] ids)
+   at Umbraco.Core.Models.UserExtensions.CombineStartNodes(UmbracoObjectTypes objectType, Int32[] groupSn, Int32[] userSn, IEntityService entityService)
+   at Umbraco.Core.Models.UserExtensions.CalculateMediaStartNodeIds(IUser user, IEntityService entityService)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<>c__DisplayClass2_0.<CheckStaleData>b__5()
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<>c.<CheckStaleData>b__2_6(Func`1 check)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<CheckStaleData>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<OnActionExecutingAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ 2019-06-05 17:07:10,040 [P13104/D2/T78] ERROR Our.Umbraco.Vorto.Web.Controllers.VortoApiController - Unhandled controller exception occurred
+System.InvalidOperationException: This SqlTransaction has completed; it is no longer usable.
+   at System.Data.SqlClient.SqlTransaction.ZombieCheck()
+   at System.Data.SqlClient.SqlTransaction.Commit()
+   at StackExchange.Profiling.Data.ProfiledDbTransaction.Commit() in c:\Code\github\SamSaffron\MiniProfiler\StackExchange.Profiling\Data\ProfiledDbTransaction.cs:line 66
+   at Umbraco.Core.Persistence.Database.CleanupTransaction()
+   at Umbraco.Core.Scoping.Scope.DisposeLastScope()
+   at Umbraco.Core.Scoping.Scope.Dispose()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.DisposeResources()
+   at Umbraco.Core.DisposableObjectSlim.Dispose(Boolean disposing)
+   at Umbraco.Core.DisposableObjectSlim.Dispose()
+   at Umbraco.Core.Services.EntityService.GetAllPaths(UmbracoObjectTypes umbracoObjectType, Int32[] ids)
+   at Umbraco.Core.Models.UserExtensions.CombineStartNodes(UmbracoObjectTypes objectType, Int32[] groupSn, Int32[] userSn, IEntityService entityService)
+   at Umbraco.Core.Models.UserExtensions.CalculateMediaStartNodeIds(IUser user, IEntityService entityService)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<>c__DisplayClass2_0.<CheckStaleData>b__5()
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<>c.<CheckStaleData>b__2_6(Func`1 check)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<CheckStaleData>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.Filters.CheckIfUserTicketDataIsStaleAttribute.<OnActionExecutingAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ 2019-06-05 17:07:10,659 [P13104/D2/T47] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.System.Data.IDbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:59d7515d-e9bd-4e10-b841-e53b06f62c44
+Error Number:-2,State:0,Class:11
+ 2019-06-05 17:07:20,200 [P13104/D2/T100] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (see exception).
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.System.Data.IDbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.get_Database()
+   at Umbraco.Core.Persistence.Repositories.ContentRepository.ProcessQuery(Sql sqlFull, PagingSqlQuery pagingSqlQuery, Boolean withCache, Boolean includeAllVersions)
+   at Umbraco.Core.Persistence.Repositories.ContentRepository.PerformGetByQuery(IQuery`1 query)
+   at Umbraco.Core.Persistence.Repositories.RepositoryBase`2.GetByQuery(IQuery`1 query)
+   at Umbraco.Core.Services.ContentService.GetContentForRelease()
+   at Umbraco.Core.Publishing.ScheduledPublisher.CheckPendingAndProcess()
+   at Umbraco.Web.Scheduling.ScheduledPublishing.PerformRun()
+ClientConnectionId:037b38eb-aa6e-4d56-a93e-f495129fd254
+Error Number:-2,State:0,Class:11
+ 2019-06-05 17:07:24,268 [P13104/D2/T47] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:07:26,406 [P13104/D2/T90] ERROR Umbraco.Web.Strategies.ServerRegistrationEventHandler - Failed to update server record in database.
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransaction(TransactionRequest transactionRequest, String name, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.System.Data.IDbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.get_Database()
+   at Umbraco.Core.Persistence.LockingRepository`1.WithWriteLocked(Action`1 action, Boolean autoCommit)
+   at Umbraco.Core.Services.ServerRegistrationService.TouchServer(String serverAddress, String serverIdentity, TimeSpan staleTimeout)
+   at Umbraco.Web.Strategies.ServerRegistrationEventHandler.TouchServerTask.PerformRun()
+ClientConnectionId:94a5cc59-5b6c-4cec-90de-b6191044be77
+Error Number:-2,State:0,Class:11
+ 2019-06-05 17:07:43,814 [P13104/D2/T92] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:08:03,369 [P13104/D2/T90] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:08:22,915 [P13104/D2/T78] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (see exception).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.get_Database()
+   at Umbraco.Core.Persistence.Repositories.ContentRepository.ProcessQuery(Sql sqlFull, PagingSqlQuery pagingSqlQuery, Boolean withCache, Boolean includeAllVersions)
+   at Umbraco.Core.Persistence.Repositories.ContentRepository.PerformGetByQuery(IQuery`1 query)
+   at Umbraco.Core.Persistence.Repositories.RepositoryBase`2.GetByQuery(IQuery`1 query)
+   at Umbraco.Core.Services.ContentService.GetContentForRelease()
+   at Umbraco.Core.Publishing.ScheduledPublisher.CheckPendingAndProcess()
+   at Umbraco.Web.Scheduling.ScheduledPublishing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:08:22,915 [P13104/D2/T84] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:08:42,462 [P13104/D2/T84] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:09:02,010 [P13104/D2/T78] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:09:21,557 [P13104/D2/T109] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:09:22,931 [P13104/D2/T78] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (see exception).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.get_Database()
+   at Umbraco.Core.Persistence.Repositories.ContentRepository.ProcessQuery(Sql sqlFull, PagingSqlQuery pagingSqlQuery, Boolean withCache, Boolean includeAllVersions)
+   at Umbraco.Core.Persistence.Repositories.ContentRepository.PerformGetByQuery(IQuery`1 query)
+   at Umbraco.Core.Persistence.Repositories.RepositoryBase`2.GetByQuery(IQuery`1 query)
+   at Umbraco.Core.Services.ContentService.GetContentForRelease()
+   at Umbraco.Core.Publishing.ScheduledPublisher.CheckPendingAndProcess()
+   at Umbraco.Web.Scheduling.ScheduledPublishing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:09:41,104 [P13104/D2/T84] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20
+ 2019-06-05 17:10:00,657 [P13104/D2/T78] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) ---> System.ComponentModel.Win32Exception (0x80004005): The network location cannot be reached. For information about network troubleshooting, see Windows Help
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.<>c__DisplayClass20_0.<ExecuteAction>b__0()
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   at Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction(Action action)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection, RetryPolicy retryPolicy)
+   at Umbraco.Core.Persistence.PetaPocoConnectionExtensions.OpenWithRetry(IDbConnection connection)
+   at Umbraco.Core.Persistence.Database.OpenSharedConnection()
+   at Umbraco.Core.Persistence.Database.BeginTransaction(IsolationLevel isolationLevel)
+   at Umbraco.Core.Scoping.Scope.get_Database()
+   at Umbraco.Core.DatabaseContext.get_Database()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.ProcessDatabaseInstructions()
+   at Umbraco.Core.Sync.DatabaseServerMessenger.Sync()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   at Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1232,State:0,Class:20

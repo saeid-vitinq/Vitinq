@@ -1,0 +1,1939 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\UmbracoCms.7.13.2\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.7.13.2\build\UmbracoCms.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A225C201-9EF2-447A-B9B6-4BF907480E54}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vitinq</RootNamespace>
+    <AssemblyName>Vitinq</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="businesslogic, Version=1.0.6974.19961, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\businesslogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core, Version=1.9.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClientDependency.1.9.7\lib\net45\ClientDependency.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core.Mvc, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClientDependency-Mvc5.1.8.0.0\lib\net45\ClientDependency.Core.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="cms, Version=1.0.6974.19961, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\cms.dll</HintPath>
+    </Reference>
+    <Reference Include="controls, Version=1.0.6974.19962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Epiphany.SeoMetadata, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Epiphany.SeoMetadata.0.4.0\lib\net40\Epiphany.SeoMetadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Examine, Version=0.1.89.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Examine.0.1.89\lib\net45\Examine.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor, Version=2.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.2.5.6\lib\net45\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor.Web, Version=4.8.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.Web.4.8.7\lib\net45\ImageProcessor.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="interfaces, Version=1.0.6974.19948, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Log4Net.Async, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Log4Net.Async.2.0.4\lib\net40\Log4Net.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownSharp, Version=1.14.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdown.1.14.7\lib\net45\MarkdownSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.1559.20655, Culture=neutral">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.0.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.0.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.2.2\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b44f9351044011a3, processorArchitecture=MSIL">
+      <HintPath>..\packages\MiniProfiler.2.1.0\lib\net40\MiniProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Our.Umbraco.UrlPreview, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.UrlPreview.1.0.0\lib\net45\Our.Umbraco.UrlPreview.dll</HintPath>
+    </Reference>
+    <Reference Include="Our.Umbraco.Vorto, Version=1.7.6988.17711, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.Vorto.1.7.1\lib\net45\Our.Umbraco.Vorto.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Semver, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\semver.1.1.2\lib\net451\Semver.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple301, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Simple301.1.1.4\lib\net452\Simple301.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLCE4Umbraco, Version=1.0.6974.19962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\SQLCE4Umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.1.36.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.1.36\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=1.0.21.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.0.21\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Dataflow.4.7.0\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\TidyNet.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco, Version=1.0.6974.19963, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Core, Version=1.0.6974.19955, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.DataLayer, Version=1.0.6974.19960, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\umbraco.DataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.editorControls, Version=1.0.6974.19966, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\umbraco.editorControls.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.MacroEngines, Version=1.0.6974.19966, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\umbraco.MacroEngines.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Umbraco.ModelsBuilder.3.0.10\lib\Umbraco.ModelsBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.providers, Version=1.0.6974.19962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\umbraco.providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Web.UI, Version=1.0.6974.19970, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\Umbraco.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UmbracoExamine, Version=0.7.0.19962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UmbracoCms.Core.7.13.2\lib\net45\UmbracoExamine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\Epiphany.SeoMetadata\css\epiphany.seo.metadata.css" />
+    <Content Include="App_Plugins\Epiphany.SeoMetadata\js\epiphany.seo.metadata.js" />
+    <Content Include="App_Plugins\Epiphany.SeoMetadata\views\epiphany.seo.metadata.html" />
+    <Content Include="App_Plugins\Epiphany.SeoMetadata\views\serp1.png" />
+    <Content Include="App_Plugins\Epiphany.SeoMetadata\views\serp2.png" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
+    <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\Our.Umbraco.UrlPreview\urlpreview.controller.js" />
+    <Content Include="App_Plugins\Our.Umbraco.UrlPreview\urlpreview.html" />
+    <Content Include="App_Plugins\Our.Umbraco.UrlPreview\urlpreview.interceptor.js" />
+    <Content Include="App_Plugins\Our.Umbraco.UrlPreview\urlpreview.resource.js" />
+    <Content Include="App_Plugins\Simple301\app.html" />
+    <Content Include="App_Plugins\Simple301\assets\scripts\app.js" />
+    <Content Include="App_Plugins\Simple301\assets\scripts\vendors.min.js" />
+    <Content Include="App_Plugins\Simple301\assets\styles\styles.min.css" />
+    <Content Include="App_Plugins\Simple301\assets\styles\vendors.min.css" />
+    <Content Include="App_Plugins\Vorto\css\vorto.css" />
+    <Content Include="App_Plugins\Vorto\js\jquery.hoverIntent.minified.js" />
+    <Content Include="App_Plugins\Vorto\js\vorto.js" />
+    <Content Include="App_Plugins\Vorto\views\vorto.html" />
+    <Content Include="App_Plugins\Vorto\views\vorto.languagePicker.html" />
+    <Content Include="App_Plugins\Vorto\views\vorto.languageSourceRadioList.html" />
+    <Content Include="App_Plugins\Vorto\views\vorto.mandatoryBehaviourPicker.html" />
+    <Content Include="App_Plugins\Vorto\views\vorto.propertyEditorPicker.html" />
+    <Content Include="App_Plugins\Vorto\views\vorto.rtlBehaviourPicker.html" />
+    <Content Include="images\Icons\16px.png" />
+    <Content Include="Media\1001\img6.jpg" />
+    <Content Include="Media\1002\img4.jpg" />
+    <Content Include="Media\1003\img2.jpg" />
+    <Content Include="Media\1004\portfolio-img3.jpg" />
+    <Content Include="Media\1005\portfolio-img4.jpg" />
+    <Content Include="Media\1006\portfolio-img5.jpg" />
+    <Content Include="Media\1007\portfolio-img7.jpg" />
+    <Content Include="Media\1008\portfolio-img9.jpg" />
+    <Content Include="Media\1009\post-img.jpg" />
+    <Content Include="Media\1010\post-img2.jpg" />
+    <Content Include="Media\1011\post-img3.jpg" />
+    <Content Include="Media\1012\post-img4.jpg" />
+    <Content Include="Media\1013\post-img5.jpg" />
+    <Content Include="Media\1014\hero_1.jpg" />
+    <Content Include="Media\1015\img_1.jpg" />
+    <Content Include="Media\1016\img_2.jpg" />
+    <Content Include="Media\1017\img_3.jpg" />
+    <Content Include="Media\1018\img_4.jpg" />
+    <Content Include="Media\1019\img_5.jpg" />
+    <Content Include="Media\1020\about_1.jpg" />
+    <Content Include="Media\1021\iconfinder_log-out_27856-3.png" />
+    <Content Include="vitinqpanel\Actions\delete.aspx" />
+    <Content Include="vitinqpanel\Actions\editContent.aspx" />
+    <Content Include="vitinqpanel\Actions\preview.aspx" />
+    <Content Include="vitinqpanel\Actions\publish.aspx" />
+    <Content Include="vitinqpanel\assets\css\canvasdesigner.css" />
+    <Content Include="vitinqpanel\assets\css\installer.css" />
+    <Content Include="vitinqpanel\assets\css\nonodes.style.min.css" />
+    <Content Include="vitinqpanel\assets\css\umbraco.css" />
+    <Content Include="vitinqpanel\assets\fonts\helveticons\helveticons.svg" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Regular-webfont.svg" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Semibold-webfont.svg" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\content.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\default.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\developer.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\help.svg" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\hlvticons-umbraco.svg" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\media.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\members.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\search.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\settings.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\tree-arrow.png" />
+    <Content Include="vitinqpanel\assets\img\applicationIcons\users.png" />
+    <Content Include="vitinqpanel\assets\img\application\logo%402x.png" />
+    <Content Include="vitinqpanel\assets\img\application\logo%403x.png" />
+    <Content Include="vitinqpanel\assets\img\application\logo.png" />
+    <Content Include="vitinqpanel\assets\img\application\logo_black.png" />
+    <Content Include="vitinqpanel\assets\img\application\logo_white.png" />
+    <Content Include="vitinqpanel\assets\img\checkered-background-20.png" />
+    <Content Include="vitinqpanel\assets\img\checkered-background.png" />
+    <Content Include="vitinqpanel\assets\img\forms\installer-background.png" />
+    <Content Include="vitinqpanel\assets\img\installer.jpg" />
+    <Content Include="vitinqpanel\assets\img\loader.gif" />
+    <Content Include="vitinqpanel\assets\img\logo.png" />
+    <Content Include="vitinqpanel\assets\img\nonodesbg.jpg" />
+    <Content Include="vitinqpanel\assets\img\transparent.png" />
+    <Content Include="vitinqpanel\assets\img\uploader\upload-illustration.png" />
+    <Content Include="vitinqpanel\assets\img\uploader\upload-illustration.svg" />
+    <Content Include="vitinqpanel\ClientRedirect.aspx" />
+    <Content Include="vitinqpanel\Config\Create\UI.xml" />
+    <Content Include="vitinqpanel\Config\Lang\cs.xml" />
+    <Content Include="vitinqpanel\Config\Lang\da.xml" />
+    <Content Include="vitinqpanel\Config\Lang\de.xml" />
+    <Content Include="vitinqpanel\Config\Lang\en.xml" />
+    <Content Include="vitinqpanel\Config\Lang\en_us.xml" />
+    <Content Include="vitinqpanel\Config\Lang\es.xml" />
+    <Content Include="vitinqpanel\Config\Lang\fr.xml" />
+    <Content Include="vitinqpanel\Config\Lang\he.xml" />
+    <Content Include="vitinqpanel\Config\Lang\it.xml" />
+    <Content Include="vitinqpanel\Config\Lang\ja.xml" />
+    <Content Include="vitinqpanel\Config\Lang\ko.xml" />
+    <Content Include="vitinqpanel\Config\Lang\nb.xml" />
+    <Content Include="vitinqpanel\Config\Lang\nl.xml" />
+    <Content Include="vitinqpanel\Config\Lang\pl.xml" />
+    <Content Include="vitinqpanel\Config\Lang\pt.xml" />
+    <Content Include="vitinqpanel\Config\Lang\ru.xml" />
+    <Content Include="vitinqpanel\Config\Lang\sv.xml" />
+    <Content Include="vitinqpanel\Config\Lang\tr.xml" />
+    <Content Include="vitinqpanel\Config\Lang\zh.xml" />
+    <Content Include="vitinqpanel\Config\Lang\zh_tw.xml" />
+    <Content Include="vitinqpanel\Controls\ProgressBar.ascx" />
+    <Content Include="vitinqpanel\Controls\Tree\CustomTreeService.asmx" />
+    <Content Include="vitinqpanel\Controls\Tree\TreeControl.ascx" />
+    <Content Include="vitinqpanel\create.aspx" />
+    <Content Include="vitinqpanel\Create\language.ascx" />
+    <Content Include="vitinqpanel\Create\simple.ascx" />
+    <Content Include="vitinqpanel\Create\xslt.ascx" />
+    <Content Include="vitinqpanel\Dashboard\FeedProxy.aspx" />
+    <Content Include="vitinqpanel\Dashboard\UserControlProxy.aspx" />
+    <Content Include="vitinqpanel\Developer\Macros\assemblyBrowser.aspx" />
+    <Content Include="vitinqpanel\Developer\Macros\editMacro.aspx" />
+    <Content Include="vitinqpanel\Developer\Packages\directoryBrowser.aspx" />
+    <Content Include="vitinqpanel\Developer\Packages\editPackage.aspx" />
+    <Content Include="vitinqpanel\Developer\Packages\installer.aspx" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\EditRelationType.aspx" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\Images\Bidirectional.png" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\Images\ParentToChild.png" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\Images\Refresh.gif" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\NewRelationType.aspx" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\RelationTypesWebService.asmx" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\TreeMenu\ActionDeleteRelationType.js" />
+    <Content Include="vitinqpanel\Developer\RelationTypes\TreeMenu\ActionNewRelationType.js" />
+    <Content Include="vitinqpanel\Developer\Xslt\editXslt.aspx" />
+    <Content Include="vitinqpanel\Developer\Xslt\getXsltStatus.asmx" />
+    <Content Include="vitinqpanel\Developer\Xslt\xsltChooseExtension.aspx" />
+    <Content Include="vitinqpanel\Developer\Xslt\xsltInsertValueOf.aspx" />
+    <Content Include="vitinqpanel\Developer\Xslt\xsltVisualize.aspx" />
+    <Content Include="vitinqpanel\Dialogs\AssignDomain2.aspx" />
+    <Content Include="vitinqpanel\Dialogs\ChangeDocType.aspx" />
+    <Content Include="vitinqpanel\Dialogs\create.aspx" />
+    <Content Include="vitinqpanel\Dialogs\EditMacro.aspx" />
+    <Content Include="vitinqpanel\Dialogs\empty.htm" />
+    <Content Include="vitinqpanel\Dialogs\exportDocumenttype.aspx" />
+    <Content Include="vitinqpanel\Dialogs\importDocumenttype.aspx" />
+    <Content Include="vitinqpanel\Dialogs\Preview.aspx" />
+    <Content Include="vitinqpanel\Dialogs\protectPage.aspx" />
+    <Content Include="vitinqpanel\Dialogs\publish.aspx" />
+    <Content Include="vitinqpanel\Dialogs\republish.aspx" />
+    <Content Include="vitinqpanel\Dialogs\rollBack.aspx" />
+    <Content Include="vitinqpanel\Dialogs\search.aspx" />
+    <Content Include="vitinqpanel\Dialogs\SendPublish.aspx" />
+    <Content Include="vitinqpanel\Dialogs\sendToTranslation.aspx" />
+    <Content Include="vitinqpanel\Dialogs\sort.aspx" />
+    <Content Include="vitinqpanel\Dialogs\treePicker.aspx" />
+    <Content Include="vitinqpanel\Dialogs\umbracoField.aspx" />
+    <Content Include="vitinqpanel\Dialogs\viewAuditTrail.aspx" />
+    <Content Include="vitinqpanel\endPreview.aspx" />
+    <Content Include="vitinqpanel\Js\app.dev.js" />
+    <Content Include="vitinqpanel\Js\app.js" />
+    <Content Include="vitinqpanel\Js\canvasdesigner.loader.js" />
+    <Content Include="vitinqpanel\Js\dualSelectBox.js" />
+    <Content Include="vitinqpanel\Js\guiFunctions.js" />
+    <Content Include="vitinqpanel\Js\init.js" />
+    <Content Include="vitinqpanel\Js\install.loader.js" />
+    <Content Include="vitinqpanel\Js\installer.app.js" />
+    <Content Include="vitinqpanel\Js\loader.dev.js" />
+    <Content Include="vitinqpanel\Js\routes.js" />
+    <Content Include="vitinqpanel\Js\umbraco.canvasdesigner.js" />
+    <Content Include="vitinqpanel\Js\umbraco.controllers.js" />
+    <Content Include="vitinqpanel\Js\umbraco.directives.js" />
+    <Content Include="vitinqpanel\Js\umbraco.filters.js" />
+    <Content Include="vitinqpanel\Js\umbraco.installer.js" />
+    <Content Include="vitinqpanel\Js\umbraco.resources.js" />
+    <Content Include="vitinqpanel\Js\umbraco.security.js" />
+    <Content Include="vitinqpanel\Js\umbraco.services.js" />
+    <Content Include="vitinqpanel\Js\umbracoCheckKeys.js" />
+    <Content Include="vitinqpanel\Js\UmbracoSpeechBubble.js" />
+    <Content Include="vitinqpanel\Js\UmbracoSpeechBubbleBackEnd.js" />
+    <Content Include="vitinqpanel\Js\UmbracoSpeechBubbleInit.js" />
+    <Content Include="vitinqpanel\Js\umbracoUpgradeChecker.js" />
+    <Content Include="vitinqpanel\Js\xmlextras.js" />
+    <Content Include="vitinqpanel\Js\xmlRequest.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\ace.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\ext-language_tools.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\ext-searchbox.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\ext-settings_menu.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\mode-javascript.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\mode-razor.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\snippets\javascript.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\snippets\text.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\theme-chrome.js" />
+    <Content Include="vitinqpanel\lib\ace-builds\src-min-noconflict\worker-javascript.js" />
+    <Content Include="vitinqpanel\lib\ace-razor-mode\theme\razor_chrome.css" />
+    <Content Include="vitinqpanel\lib\angular-bootstrap\ui-bootstrap-tpls-0.10.0.min.js" />
+    <Content Include="vitinqpanel\lib\angular-dynamic-locale\tmhDynamicLocale.min.js" />
+    <Content Include="vitinqpanel\lib\angular-local-storage\angular-local-storage.min.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-cookies.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-cookies.min.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-loader.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-loader.min.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-mobile.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-mobile.min.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-mocks.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-resource.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-resource.min.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-sanitize.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-sanitize.min.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular-scenario.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\angular.min.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_af-na.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_af-za.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_af.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_am-et.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_am.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-001.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-ae.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-bh.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-dz.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-eg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-iq.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-jo.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-kw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-lb.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-ly.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-ma.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-om.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-qa.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-sa.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-sd.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-sy.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-tn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar-ye.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ar.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_bg-bg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_bg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_bn-bd.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_bn-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_bn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ca-ad.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ca-es.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ca.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_chr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_cs-cz.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_cs.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_cy.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_da-dk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_da.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_de-at.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_de-be.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_de-ch.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_de-de.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_de-li.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_de-lu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_de.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_el-cy.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_el-gr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_el-polyton.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_el.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-as.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-au.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-bb.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-be.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-bm.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-bw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-bz.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-ca.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-dsrt-us.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-dsrt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-fm.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-gb.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-gu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-gy.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-hk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-ie.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-iso.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-jm.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-mh.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-mp.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-mt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-mu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-na.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-nz.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-ph.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-pk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-pr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-pw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-sg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-tc.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-tt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-um.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-us.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-vg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-vi.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-za.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-zw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en-zz.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_en.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-419.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-ar.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-bo.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-cl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-co.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-cr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-do.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-ea.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-ec.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-es.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-gq.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-gt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-hn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-ic.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-mx.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-ni.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-pa.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-pe.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-pr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-py.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-sv.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-us.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-uy.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es-ve.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_es.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_et-ee.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_et.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_eu-es.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_eu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fa-af.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fa-ir.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fa.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fi-fi.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fi.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fil-ph.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fil.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-be.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-bf.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-bi.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-bj.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-bl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-ca.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-cd.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-cf.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-cg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-ch.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-ci.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-cm.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-dj.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-fr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-ga.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-gf.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-gn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-gp.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-gq.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-km.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-lu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-mc.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-mf.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-mg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-ml.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-mq.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-ne.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-re.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-rw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-sn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-td.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-tg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr-yt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_fr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_gl-es.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_gl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_gsw-ch.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_gsw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_gu-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_gu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_haw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_he-il.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_he.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_hi-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_hi.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_hr-hr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_hr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_hu-hu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_hu.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_id-id.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_id.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_is-is.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_is.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_it-ch.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_it-it.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_it-sm.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_it.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_iw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ja-jp.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ja.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_kn-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_kn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ko-kr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ko.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ln-cd.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ln-cg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ln.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_lt-lt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_lt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_lv-lv.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_lv.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ml-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ml.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_mo.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_mr-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_mr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ms-bn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ms-my.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ms.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_mt-mt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_mt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_nl-aw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_nl-be.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_nl-cw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_nl-nl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_nl-sx.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_nl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_no.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_or-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_or.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pl-pl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pt-ao.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pt-br.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pt-gw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pt-mz.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pt-pt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pt-st.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_pt.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ro-md.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ro-ro.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ro.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ru-md.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ru-ru.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ru-ua.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ru.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sk-sk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sl-si.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sq-al.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sq.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-cyrl-ba.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-cyrl-me.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-cyrl-rs.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-cyrl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-latn-ba.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-latn-me.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-latn-rs.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-latn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr-rs.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sv-fi.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sv-se.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sv.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sw-ke.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sw-tz.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_sw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ta-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ta-lk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ta.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_te-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_te.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_th-th.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_th.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_tl-ph.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_tl.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_tr-tr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_tr.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_uk-ua.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_uk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ur-in.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ur-pk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_ur.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_vi-vn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_vi.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-cn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hans-cn.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hans-hk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hans-mo.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hans-sg.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hans.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hant-hk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hant-mo.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hant-tw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hant.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-hk.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh-tw.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zh.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zu-za.js" />
+    <Content Include="vitinqpanel\lib\angular\1.1.5\i18n\angular-locale_zu.js" />
+    <Content Include="vitinqpanel\lib\angular\angular-ui-sortable.js" />
+    <Content Include="vitinqpanel\lib\bootstrap-social\bootstrap-social.css" />
+    <Content Include="vitinqpanel\lib\bootstrap-tabdrop\bootstrap-tabdrop.js" />
+    <Content Include="vitinqpanel\lib\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\css\bootstrap.cosmo.min.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\css\bootstrap.min.3.0.1.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\css\responsive.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="vitinqpanel\lib\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="vitinqpanel\lib\bootstrap\js\bootstrap.2.3.2.js" />
+    <Content Include="vitinqpanel\lib\bootstrap\js\bootstrap.2.3.2.min.js" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\buttons.html" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\css-tests.css" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\css-tests.html" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\forms-responsive.html" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\forms.html" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\navbar-fixed-top.html" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\navbar-static-top.html" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tests\navbar.html" />
+    <Content Include="vitinqpanel\lib\clipboard\clipboard.min.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\dialog\dialog.css" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\dialog\dialog.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\edit\closebrackets.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\edit\closetag.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\edit\continuelist.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\edit\matchbrackets.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\edit\matchtags.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\edit\trailingspace.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\search\match-highlighter.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\search\matchesonscrollbar.css" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\search\matchesonscrollbar.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\search\search.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\search\searchcursor.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\selection\active-line.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\selection\mark-selection.js" />
+    <Content Include="vitinqpanel\lib\codemirror\addon\selection\selection-pointer.js" />
+    <Content Include="vitinqpanel\lib\codemirror\lib\codemirror.css" />
+    <Content Include="vitinqpanel\lib\codemirror\lib\codemirror.js" />
+    <Content Include="vitinqpanel\lib\codemirror\mode\css\css.js" />
+    <Content Include="vitinqpanel\lib\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="vitinqpanel\lib\codemirror\mode\javascript\javascript.js" />
+    <Content Include="vitinqpanel\lib\codemirror\mode\razor\index.html" />
+    <Content Include="vitinqpanel\lib\codemirror\mode\razor\razor.js" />
+    <Content Include="vitinqpanel\lib\codemirror\mode\xml\xml.js" />
+    <Content Include="vitinqpanel\lib\cssparser\cssparser.js" />
+    <Content Include="vitinqpanel\lib\datetimepicker\bootstrap-datetimepicker.js" />
+    <Content Include="vitinqpanel\lib\datetimepicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="vitinqpanel\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vitinqpanel\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vitinqpanel\lib\jquery-migrate\jquery-migrate.min.js" />
+    <Content Include="vitinqpanel\lib\jquery-ui-touch-punch\jquery.ui.touch-punch.js" />
+    <Content Include="vitinqpanel\lib\jquery-ui\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="vitinqpanel\lib\jquery-ui\jquery-ui.min.js" />
+    <Content Include="vitinqpanel\lib\jquery\jquery.min.js" />
+    <Content Include="vitinqpanel\lib\less\less-1.7.0.min.js" />
+    <Content Include="vitinqpanel\lib\markdown\markdown.converter.js" />
+    <Content Include="vitinqpanel\lib\markdown\markdown.css" />
+    <Content Include="vitinqpanel\lib\markdown\markdown.editor.js" />
+    <Content Include="vitinqpanel\lib\markdown\markdown.sanitizer.js" />
+    <Content Include="vitinqpanel\lib\markdown\red.css" />
+    <Content Include="vitinqpanel\lib\moment\af.js" />
+    <Content Include="vitinqpanel\lib\moment\ar-ma.js" />
+    <Content Include="vitinqpanel\lib\moment\ar-sa.js" />
+    <Content Include="vitinqpanel\lib\moment\ar-tn.js" />
+    <Content Include="vitinqpanel\lib\moment\ar.js" />
+    <Content Include="vitinqpanel\lib\moment\az.js" />
+    <Content Include="vitinqpanel\lib\moment\be.js" />
+    <Content Include="vitinqpanel\lib\moment\bg.js" />
+    <Content Include="vitinqpanel\lib\moment\bn.js" />
+    <Content Include="vitinqpanel\lib\moment\bo.js" />
+    <Content Include="vitinqpanel\lib\moment\br.js" />
+    <Content Include="vitinqpanel\lib\moment\bs.js" />
+    <Content Include="vitinqpanel\lib\moment\ca.js" />
+    <Content Include="vitinqpanel\lib\moment\cs.js" />
+    <Content Include="vitinqpanel\lib\moment\cv.js" />
+    <Content Include="vitinqpanel\lib\moment\cy.js" />
+    <Content Include="vitinqpanel\lib\moment\da.js" />
+    <Content Include="vitinqpanel\lib\moment\de-at.js" />
+    <Content Include="vitinqpanel\lib\moment\de.js" />
+    <Content Include="vitinqpanel\lib\moment\el.js" />
+    <Content Include="vitinqpanel\lib\moment\en-au.js" />
+    <Content Include="vitinqpanel\lib\moment\en-ca.js" />
+    <Content Include="vitinqpanel\lib\moment\en-gb.js" />
+    <Content Include="vitinqpanel\lib\moment\eo.js" />
+    <Content Include="vitinqpanel\lib\moment\es.js" />
+    <Content Include="vitinqpanel\lib\moment\et.js" />
+    <Content Include="vitinqpanel\lib\moment\eu.js" />
+    <Content Include="vitinqpanel\lib\moment\fa.js" />
+    <Content Include="vitinqpanel\lib\moment\fi.js" />
+    <Content Include="vitinqpanel\lib\moment\fo.js" />
+    <Content Include="vitinqpanel\lib\moment\fr-ca.js" />
+    <Content Include="vitinqpanel\lib\moment\fr.js" />
+    <Content Include="vitinqpanel\lib\moment\fy.js" />
+    <Content Include="vitinqpanel\lib\moment\gl.js" />
+    <Content Include="vitinqpanel\lib\moment\he.js" />
+    <Content Include="vitinqpanel\lib\moment\hi.js" />
+    <Content Include="vitinqpanel\lib\moment\hr.js" />
+    <Content Include="vitinqpanel\lib\moment\hu.js" />
+    <Content Include="vitinqpanel\lib\moment\hy-am.js" />
+    <Content Include="vitinqpanel\lib\moment\id.js" />
+    <Content Include="vitinqpanel\lib\moment\is.js" />
+    <Content Include="vitinqpanel\lib\moment\it.js" />
+    <Content Include="vitinqpanel\lib\moment\ja.js" />
+    <Content Include="vitinqpanel\lib\moment\jv.js" />
+    <Content Include="vitinqpanel\lib\moment\ka.js" />
+    <Content Include="vitinqpanel\lib\moment\km.js" />
+    <Content Include="vitinqpanel\lib\moment\ko.js" />
+    <Content Include="vitinqpanel\lib\moment\lb.js" />
+    <Content Include="vitinqpanel\lib\moment\lt.js" />
+    <Content Include="vitinqpanel\lib\moment\lv.js" />
+    <Content Include="vitinqpanel\lib\moment\me.js" />
+    <Content Include="vitinqpanel\lib\moment\mk.js" />
+    <Content Include="vitinqpanel\lib\moment\ml.js" />
+    <Content Include="vitinqpanel\lib\moment\moment-with-locales.js" />
+    <Content Include="vitinqpanel\lib\moment\moment-with-locales.min.js" />
+    <Content Include="vitinqpanel\lib\moment\moment.min.js" />
+    <Content Include="vitinqpanel\lib\moment\mr.js" />
+    <Content Include="vitinqpanel\lib\moment\ms-my.js" />
+    <Content Include="vitinqpanel\lib\moment\ms.js" />
+    <Content Include="vitinqpanel\lib\moment\my.js" />
+    <Content Include="vitinqpanel\lib\moment\nb.js" />
+    <Content Include="vitinqpanel\lib\moment\ne.js" />
+    <Content Include="vitinqpanel\lib\moment\nl.js" />
+    <Content Include="vitinqpanel\lib\moment\nn.js" />
+    <Content Include="vitinqpanel\lib\moment\pl.js" />
+    <Content Include="vitinqpanel\lib\moment\pt-br.js" />
+    <Content Include="vitinqpanel\lib\moment\pt.js" />
+    <Content Include="vitinqpanel\lib\moment\ro.js" />
+    <Content Include="vitinqpanel\lib\moment\ru.js" />
+    <Content Include="vitinqpanel\lib\moment\si.js" />
+    <Content Include="vitinqpanel\lib\moment\sk.js" />
+    <Content Include="vitinqpanel\lib\moment\sl.js" />
+    <Content Include="vitinqpanel\lib\moment\sq.js" />
+    <Content Include="vitinqpanel\lib\moment\sr-cyrl.js" />
+    <Content Include="vitinqpanel\lib\moment\sr.js" />
+    <Content Include="vitinqpanel\lib\moment\sv.js" />
+    <Content Include="vitinqpanel\lib\moment\ta.js" />
+    <Content Include="vitinqpanel\lib\moment\th.js" />
+    <Content Include="vitinqpanel\lib\moment\tl-ph.js" />
+    <Content Include="vitinqpanel\lib\moment\tr.js" />
+    <Content Include="vitinqpanel\lib\moment\tzl.js" />
+    <Content Include="vitinqpanel\lib\moment\tzm-latn.js" />
+    <Content Include="vitinqpanel\lib\moment\tzm.js" />
+    <Content Include="vitinqpanel\lib\moment\uk.js" />
+    <Content Include="vitinqpanel\lib\moment\uz.js" />
+    <Content Include="vitinqpanel\lib\moment\vi.js" />
+    <Content Include="vitinqpanel\lib\moment\zh-cn.js" />
+    <Content Include="vitinqpanel\lib\moment\zh-tw.js" />
+    <Content Include="vitinqpanel\lib\ng-file-upload\ng-file-upload.min.js" />
+    <Content Include="vitinqpanel\lib\rgrove-lazyload\lazyload.js" />
+    <Content Include="vitinqpanel\lib\slider\bootstrap-slider-custom.css" />
+    <Content Include="vitinqpanel\lib\slider\bootstrap-slider.css" />
+    <Content Include="vitinqpanel\lib\slider\js\bootstrap-slider.js" />
+    <Content Include="vitinqpanel\lib\spectrum\spectrum.css" />
+    <Content Include="vitinqpanel\lib\spectrum\spectrum.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\da.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\de.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\en.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\en_us.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\fi.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\fr.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\he.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\it.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\ja.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\nl.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\no.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\pl.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\pt.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\ru.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\sv.js" />
+    <Content Include="vitinqpanel\lib\tinymce\langs\zh.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\advlist\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\anchor\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autolink\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autoresize\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autosave\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\bbcode\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\bbcode\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\charmap\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\da.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\de.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\en.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\en_us.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\fi.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\fr.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\he.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\it.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\ja.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\nl.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\no.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\pl.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\pt.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\ru.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\sv.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\langs\zh.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codemirror\source.html" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codesample\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codesample\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\code\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\code\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\colorpicker\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\colorpicker\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\contextmenu\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\contextmenu\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\directionality\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\fullpage\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\fullpage\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\fullscreen\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\help\img\logo.png" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\help\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\help\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\help\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\hr\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\hr\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\imagetools\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\imagetools\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\image\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\image\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\importcss\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\insertdatetime\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\legacyoutput\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\legacyoutput\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\link\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\link\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\lists\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\lists\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\media\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\media\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\nonbreaking\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\noneditable\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\noneditable\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\pagebreak\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\paste\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\paste\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\preview\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\preview\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\print\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\print\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\save\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\save\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\searchreplace\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\spellchecker\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\spellchecker\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\tabfocus\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\tabfocus\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\table\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\table\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\template\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\template\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\textcolor\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\textcolor\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\textpattern\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\textpattern\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\toc\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\toc\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\toc\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\visualblocks\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\visualchars\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\wordcount\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="vitinqpanel\lib\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\content.min.css" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce-small.svg" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce.svg" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\img\anchor.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\img\loader.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\img\object.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\img\trans.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\img\wline.gif" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\skin.classic.min.css" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\skin.ie7.min.css" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\skin.min.css" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\inlite\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\inlite\theme.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\inlite\theme.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\mobile\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\mobile\theme.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\mobile\theme.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\modern\index.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\modern\theme.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\modern\theme.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\themes\umbraco\theme.min.js" />
+    <Content Include="vitinqpanel\lib\tinymce\tinymce.min.js" />
+    <Content Include="vitinqpanel\lib\typeahead.js\typeahead.bundle.min.js" />
+    <Content Include="vitinqpanel\lib\umbraco\compat.js" />
+    <Content Include="vitinqpanel\lib\umbraco\Extensions.js" />
+    <Content Include="vitinqpanel\lib\umbraco\LegacySpeechBubble.js" />
+    <Content Include="vitinqpanel\lib\umbraco\LegacyUmbClientMgr.js" />
+    <Content Include="vitinqpanel\lib\umbraco\NamespaceManager.js" />
+    <Content Include="vitinqpanel\lib\underscore\underscore-min.js" />
+    <Content Include="vitinqpanel\Logout.aspx" />
+    <Content Include="vitinqpanel\macroResultWrapper.aspx" />
+    <Content Include="vitinqpanel\Members\EditMemberGroup.aspx" />
+    <Content Include="vitinqpanel\Members\MemberSearch.ascx" />
+    <Content Include="vitinqpanel\Members\search.aspx" />
+    <Content Include="vitinqpanel\Members\ViewMembers.aspx" />
+    <Content Include="vitinqpanel\ping.aspx" />
+    <Content Include="vitinqpanel\Plugins\Tinymce3\tinymce3tinymceCompress.aspx" />
+    <Content Include="vitinqpanel\publishStatus.aspx" />
+    <Content Include="vitinqpanel\Search\QuickSearch.ascx" />
+    <Content Include="vitinqpanel\Search\quickSearch.js" />
+    <Content Include="vitinqpanel\Settings\DictionaryItemList.aspx" />
+    <Content Include="vitinqpanel\Settings\EditDictionaryItem.aspx" />
+    <Content Include="vitinqpanel\Settings\editLanguage.aspx" />
+    <Content Include="vitinqpanel\Settings\Modals\ShowUmbracoTags.aspx" />
+    <Content Include="vitinqpanel\Settings\Stylesheet\editstylesheet.aspx" />
+    <Content Include="vitinqpanel\Settings\Stylesheet\Property\EditStyleSheetProperty.aspx" />
+    <Content Include="vitinqpanel\Translation\default.aspx" />
+    <Content Include="vitinqpanel\Translation\details.aspx" />
+    <Content Include="vitinqpanel\Translation\preview.aspx" />
+    <Content Include="vitinqpanel\Translation\xml.aspx" />
+    <Content Include="vitinqpanel\tree.aspx" />
+    <Content Include="vitinqpanel\treeInit.aspx" />
+    <Content Include="vitinqpanel\umbraco.aspx" />
+    <Content Include="vitinqpanel\Views\common\dashboard.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\approvedcolorpicker.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\content\edit.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\help.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\iconpicker.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\insertmacro.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\legacydelete.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\linkpicker.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\login.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\macropicker.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\mediapicker.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\membergrouppicker.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\property.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\rteembed.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\template\querybuilder.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\template\snippet.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\treepicker.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\user.html" />
+    <Content Include="vitinqpanel\Views\common\dialogs\ysod.html" />
+    <Content Include="vitinqpanel\Views\common\drawers\help\help.html" />
+    <Content Include="vitinqpanel\Views\common\legacy.html" />
+    <Content Include="vitinqpanel\Views\common\login.html" />
+    <Content Include="vitinqpanel\Views\common\notifications\confirmroutechange.html" />
+    <Content Include="vitinqpanel\Views\common\notifications\confirmunpublish.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\contentpicker\contentpicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\contenttypeeditor\compositions\compositions.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\contenttypeeditor\editorpicker\editorpicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\contenttypeeditor\editorsettings\editorsettings.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\contenttypeeditor\propertysettings\propertysettings.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\copy\copy.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\embed\embed.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\help\help.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\iconpicker\iconpicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\insertfield\insertfield.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\insert\insert.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\itempicker\itempicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\linkpicker\linkpicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\macropicker\macropicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\mediaPicker\mediapicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\mediatypepicker\mediatypepicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\membergrouppicker\membergrouppicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\memberpicker\memberpicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\move\move.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\nodepermissions\nodepermissions.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\querybuilder\querybuilder.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\sectionpicker\sectionpicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\templatesections\templatesections.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\treepicker\treepicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\usergrouppicker\usergrouppicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\userpicker\userpicker.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\user\user.html" />
+    <Content Include="vitinqpanel\Views\common\overlays\ysod\ysod.html" />
+    <Content Include="vitinqpanel\Views\common\tours\umbintrocreatecontent\nodename\nodename.html" />
+    <Content Include="vitinqpanel\Views\common\tours\umbintrocreatedoctype\doctypename\doctypename.html" />
+    <Content Include="vitinqpanel\Views\common\tours\umbintrocreatedoctype\propertyname\propertyname.html" />
+    <Content Include="vitinqpanel\Views\common\tours\umbintrocreatedoctype\tabname\tabname.html" />
+    <Content Include="vitinqpanel\Views\common\tours\umbintromediasection\foldername\foldername.html" />
+    <Content Include="vitinqpanel\Views\common\tours\umbintromediasection\uploadimages\uploadimages.html" />
+    <Content Include="vitinqpanel\Views\common\tours\umbintrorenderintemplate\templatetree\templatetree.html" />
+    <Content Include="vitinqpanel\Views\components\application\umb-backdrop.html" />
+    <Content Include="vitinqpanel\Views\components\application\umb-contextmenu.html" />
+    <Content Include="vitinqpanel\Views\components\application\umb-navigation.html" />
+    <Content Include="vitinqpanel\Views\components\application\umb-sections.html" />
+    <Content Include="vitinqpanel\Views\components\application\umb-tour.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbdrawer\umb-drawer-content.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbdrawer\umb-drawer-footer.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbdrawer\umb-drawer-header.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbdrawer\umb-drawer-view.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbdrawer\umb-drawer.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbtour\umb-tour-step-content.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbtour\umb-tour-step-counter.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbtour\umb-tour-step-footer.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbtour\umb-tour-step-header.html" />
+    <Content Include="vitinqpanel\Views\components\application\umbtour\umb-tour-step.html" />
+    <Content Include="vitinqpanel\Views\components\buttons\umb-button-group.html" />
+    <Content Include="vitinqpanel\Views\components\buttons\umb-button.html" />
+    <Content Include="vitinqpanel\Views\components\buttons\umb-toggle.html" />
+    <Content Include="vitinqpanel\Views\components\content\edit.html" />
+    <Content Include="vitinqpanel\Views\components\content\umb-content-node-info.html" />
+    <Content Include="vitinqpanel\Views\components\editor\subheader\umb-editor-sub-header-content-left.html" />
+    <Content Include="vitinqpanel\Views\components\editor\subheader\umb-editor-sub-header-content-right.html" />
+    <Content Include="vitinqpanel\Views\components\editor\subheader\umb-editor-sub-header-section.html" />
+    <Content Include="vitinqpanel\Views\components\editor\subheader\umb-editor-sub-header.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-breadcrumbs.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-container.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-footer-content-left.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-footer-content-right.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-footer.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-header.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-menu.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-navigation.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-sub-views.html" />
+    <Content Include="vitinqpanel\Views\components\editor\umb-editor-view.html" />
+    <Content Include="vitinqpanel\Views\components\html\umb-box\umb-box-content.html" />
+    <Content Include="vitinqpanel\Views\components\html\umb-box\umb-box-header.html" />
+    <Content Include="vitinqpanel\Views\components\html\umb-box\umb-box.html" />
+    <Content Include="vitinqpanel\Views\components\html\umb-control-group.html" />
+    <Content Include="vitinqpanel\Views\components\html\umb-pane.html" />
+    <Content Include="vitinqpanel\Views\components\html\umb-panel.html" />
+    <Content Include="vitinqpanel\Views\components\imaging\umb-image-crop.html" />
+    <Content Include="vitinqpanel\Views\components\imaging\umb-image-gravity.html" />
+    <Content Include="vitinqpanel\Views\components\imaging\umb-image-thumbnail.html" />
+    <Content Include="vitinqpanel\Views\components\media\umb-media-node-info.html" />
+    <Content Include="vitinqpanel\Views\components\notifications\umb-notifications.html" />
+    <Content Include="vitinqpanel\Views\components\overlays\umb-overlay-backdrop.html" />
+    <Content Include="vitinqpanel\Views\components\overlays\umb-overlay.html" />
+    <Content Include="vitinqpanel\Views\components\property\umb-property-editor.html" />
+    <Content Include="vitinqpanel\Views\components\property\umb-property-group.html" />
+    <Content Include="vitinqpanel\Views\components\property\umb-property.html" />
+    <Content Include="vitinqpanel\Views\components\tabs\umb-tab.html" />
+    <Content Include="vitinqpanel\Views\components\tabs\umb-tabs-content.html" />
+    <Content Include="vitinqpanel\Views\components\tabs\umb-tabs-nav.html" />
+    <Content Include="vitinqpanel\Views\components\tree\umb-tree-search-box.html" />
+    <Content Include="vitinqpanel\Views\components\tree\umb-tree-search-results.html" />
+    <Content Include="vitinqpanel\Views\components\umb-avatar.html" />
+    <Content Include="vitinqpanel\Views\components\umb-badge.html" />
+    <Content Include="vitinqpanel\Views\components\umb-checkmark.html" />
+    <Content Include="vitinqpanel\Views\components\umb-child-selector.html" />
+    <Content Include="vitinqpanel\Views\components\umb-color-swatches.html" />
+    <Content Include="vitinqpanel\Views\components\umb-confirm-action.html" />
+    <Content Include="vitinqpanel\Views\components\umb-confirm.html" />
+    <Content Include="vitinqpanel\Views\components\umb-content-grid.html" />
+    <Content Include="vitinqpanel\Views\components\umb-date-time-picker.html" />
+    <Content Include="vitinqpanel\Views\components\umb-dropdown-item.html" />
+    <Content Include="vitinqpanel\Views\components\umb-dropdown.html" />
+    <Content Include="vitinqpanel\Views\components\umb-empty-state.html" />
+    <Content Include="vitinqpanel\Views\components\umb-folder-grid.html" />
+    <Content Include="vitinqpanel\Views\components\umb-generate-alias.html" />
+    <Content Include="vitinqpanel\Views\components\umb-grid-selector.html" />
+    <Content Include="vitinqpanel\Views\components\umb-groups-builder.html" />
+    <Content Include="vitinqpanel\Views\components\umb-keyboard-shortcuts-overview.html" />
+    <Content Include="vitinqpanel\Views\components\umb-layout-selector.html" />
+    <Content Include="vitinqpanel\Views\components\umb-lightbox.html" />
+    <Content Include="vitinqpanel\Views\components\umb-list-view-layout.html" />
+    <Content Include="vitinqpanel\Views\components\umb-list-view-settings.html" />
+    <Content Include="vitinqpanel\Views\components\umb-load-indicator.html" />
+    <Content Include="vitinqpanel\Views\components\umb-locked-field.html" />
+    <Content Include="vitinqpanel\Views\components\umb-media-grid.html" />
+    <Content Include="vitinqpanel\Views\components\umb-mini-list-view.html" />
+    <Content Include="vitinqpanel\Views\components\umb-node-preview.html" />
+    <Content Include="vitinqpanel\Views\components\umb-pagination.html" />
+    <Content Include="vitinqpanel\Views\components\umb-progress-bar.html" />
+    <Content Include="vitinqpanel\Views\components\umb-progress-circle.html" />
+    <Content Include="vitinqpanel\Views\components\umb-table.html" />
+    <Content Include="vitinqpanel\Views\components\umb-tooltip.html" />
+    <Content Include="vitinqpanel\Views\components\upload\umb-file-dropzone.html" />
+    <Content Include="vitinqpanel\Views\components\users\change-password.html" />
+    <Content Include="vitinqpanel\Views\components\users\umb-permission.html" />
+    <Content Include="vitinqpanel\Views\components\users\umb-user-group-preview.html" />
+    <Content Include="vitinqpanel\Views\components\users\umb-user-preview.html" />
+    <Content Include="vitinqpanel\Views\contentblueprints\create.html" />
+    <Content Include="vitinqpanel\Views\contentblueprints\delete.html" />
+    <Content Include="vitinqpanel\Views\contentblueprints\edit.html" />
+    <Content Include="vitinqpanel\Views\contentblueprints\intro.html" />
+    <Content Include="vitinqpanel\Views\content\copy.html" />
+    <Content Include="vitinqpanel\Views\content\create.html" />
+    <Content Include="vitinqpanel\Views\content\createblueprint.html" />
+    <Content Include="vitinqpanel\Views\content\delete.html" />
+    <Content Include="vitinqpanel\Views\content\edit.html" />
+    <Content Include="vitinqpanel\Views\content\emptyrecyclebin.html" />
+    <Content Include="vitinqpanel\Views\content\move.html" />
+    <Content Include="vitinqpanel\Views\content\notify.html" />
+    <Content Include="vitinqpanel\Views\content\recyclebin.html" />
+    <Content Include="vitinqpanel\Views\content\restore.html" />
+    <Content Include="vitinqpanel\Views\content\rights.html" />
+    <Content Include="vitinqpanel\Views\content\umbpreview.html" />
+    <Content Include="vitinqpanel\Views\dashboard\ChangePassword.html" />
+    <Content Include="vitinqpanel\Views\dashboard\default\ourumbraco.jpg" />
+    <Content Include="vitinqpanel\Views\dashboard\default\StartupDashboardIntro.html" />
+    <Content Include="vitinqpanel\Views\dashboard\default\StartupDashboardKits.html" />
+    <Content Include="vitinqpanel\Views\dashboard\default\StartupDashboardLastEdits.html" />
+    <Content Include="vitinqpanel\Views\dashboard\default\StartupDashboardVideos.html" />
+    <Content Include="vitinqpanel\Views\dashboard\default\umbracotv.jpg" />
+    <Content Include="vitinqpanel\Views\dashboard\developer\developerdashboardintro.html" />
+    <Content Include="vitinqpanel\Views\dashboard\developer\developerdashboardvideos.html" />
+    <Content Include="vitinqpanel\Views\dashboard\developer\examinemanagement.html" />
+    <Content Include="vitinqpanel\Views\dashboard\developer\healthcheck.html" />
+    <Content Include="vitinqpanel\Views\dashboard\developer\redirecturls.html" />
+    <Content Include="vitinqpanel\Views\dashboard\developer\xmldataintegrityreport.html" />
+    <Content Include="vitinqpanel\Views\dashboard\forms\formsdashboardintro.html" />
+    <Content Include="vitinqpanel\Views\dashboard\media\desktopmediauploader.html" />
+    <Content Include="vitinqpanel\Views\dashboard\media\mediadashboardintro.html" />
+    <Content Include="vitinqpanel\Views\dashboard\media\mediadashboardvideos.html" />
+    <Content Include="vitinqpanel\Views\dashboard\media\mediafolderbrowser.html" />
+    <Content Include="vitinqpanel\Views\dashboard\members\membersdashboardintro.html" />
+    <Content Include="vitinqpanel\Views\dashboard\members\membersdashboardvideos.html" />
+    <Content Include="vitinqpanel\Views\dashboard\settings\settingsdashboardintro.html" />
+    <Content Include="vitinqpanel\Views\dashboard\settings\settingsdashboardvideos.html" />
+    <Content Include="vitinqpanel\Views\datatypes\create.html" />
+    <Content Include="vitinqpanel\Views\datatypes\delete.html" />
+    <Content Include="vitinqpanel\Views\datatypes\edit.html" />
+    <Content Include="vitinqpanel\Views\datatypes\move.html" />
+    <Content Include="vitinqpanel\Views\datatypes\rename.html" />
+    <Content Include="vitinqpanel\Views\dictionary\create.html" />
+    <Content Include="vitinqpanel\Views\dictionary\delete.html" />
+    <Content Include="vitinqpanel\Views\dictionary\edit.html" />
+    <Content Include="vitinqpanel\Views\dictionary\list.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-content-name.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-header.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-item-sorter.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-login.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-optionsmenu.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-photo-folder.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-tab-view.html" />
+    <Content Include="vitinqpanel\Views\directives\_obsolete\umb-upload-dropzone.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\copy.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\create.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\delete.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\edit.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\move.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\property.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\propertygroup.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\rename.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\views\design\design.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\views\listview\listview.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\views\permissions\permissions.html" />
+    <Content Include="vitinqpanel\Views\documenttypes\views\templates\templates.html" />
+    <Content Include="vitinqpanel\Views\install\continueinstall.html" />
+    <Content Include="vitinqpanel\Views\install\database.html" />
+    <Content Include="vitinqpanel\Views\install\error.html" />
+    <Content Include="vitinqpanel\Views\install\machinekey.html" />
+    <Content Include="vitinqpanel\Views\install\permissionsreport.html" />
+    <Content Include="vitinqpanel\Views\install\starterkit.html" />
+    <Content Include="vitinqpanel\Views\install\upgrade.html" />
+    <Content Include="vitinqpanel\Views\install\user.html" />
+    <Content Include="vitinqpanel\Views\install\version7upgradereport.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\copy.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\create.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\delete.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\edit.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\move.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\rename.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\views\design\design.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\views\listview\listview.html" />
+    <Content Include="vitinqpanel\Views\mediatypes\views\permissions\permissions.html" />
+    <Content Include="vitinqpanel\Views\media\create.html" />
+    <Content Include="vitinqpanel\Views\media\delete.html" />
+    <Content Include="vitinqpanel\Views\media\edit.html" />
+    <Content Include="vitinqpanel\Views\media\emptyrecyclebin.html" />
+    <Content Include="vitinqpanel\Views\media\move.html" />
+    <Content Include="vitinqpanel\Views\media\recyclebin.html" />
+    <Content Include="vitinqpanel\Views\media\restore.html" />
+    <Content Include="vitinqpanel\Views\membertypes\create.html" />
+    <Content Include="vitinqpanel\Views\membertypes\delete.html" />
+    <Content Include="vitinqpanel\Views\membertypes\edit.html" />
+    <Content Include="vitinqpanel\Views\membertypes\move.html" />
+    <Content Include="vitinqpanel\Views\membertypes\views\design\design.html" />
+    <Content Include="vitinqpanel\Views\member\create.html" />
+    <Content Include="vitinqpanel\Views\member\delete.html" />
+    <Content Include="vitinqpanel\Views\member\edit.html" />
+    <Content Include="vitinqpanel\Views\member\list.html" />
+    <Content Include="vitinqpanel\Views\packager\delete.html" />
+    <Content Include="vitinqpanel\Views\packager\overview.html" />
+    <Content Include="vitinqpanel\Views\packager\views\install-local.html" />
+    <Content Include="vitinqpanel\Views\packager\views\installed.html" />
+    <Content Include="vitinqpanel\Views\packager\views\repo.html" />
+    <Content Include="vitinqpanel\Views\partialviewmacros\create.html" />
+    <Content Include="vitinqpanel\Views\partialviewmacros\delete.html" />
+    <Content Include="vitinqpanel\Views\partialviewmacros\edit.html" />
+    <Content Include="vitinqpanel\Views\partialviews\create.html" />
+    <Content Include="vitinqpanel\Views\partialviews\delete.html" />
+    <Content Include="vitinqpanel\Views\partialviews\edit.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\boolean.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\colorpicker.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\decimal.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\hidden.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\imagepicker.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\mediapicker.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\multivalues.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\nodetype.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\number.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\radiobuttonlist.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\readonlykeyvalues.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\requiredfield.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\textarea.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\textstring.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\textstringlimited.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\treepicker.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\treesource.html" />
+    <Content Include="vitinqpanel\Views\prevalueeditors\valuetype.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\boolean\boolean.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\changepassword\changepassword.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\checkboxlist\checkboxlist.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\colorpicker\colorpicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\colorpicker\colorpicker.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\contentpicker\contentpicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\datepicker\datepicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\decimal\decimal.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\dropdownFlexible\dropdownFlexible.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\dropdown\dropdown.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\email\email.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\entitypicker\entitypicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\fileupload\fileupload.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\folderbrowser\folderbrowser.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\googlemaps\googlemaps.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\config\grid.default.config.js" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\config\grid.default.rtestyles.css" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\dialogs\config.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\dialogs\editconfig.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\dialogs\layoutconfig.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\dialogs\rowconfig.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\dialogs\rowdeleteconfirm.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\editors\embed.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\editors\error.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\editors\macro.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\editors\media.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\editors\rte.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\editors\textstring.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\grid.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\grid\grid.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\idwithguid\idwithguid.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\imagecropper\imagecropper.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\imagecropper\imagecropper.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\integer\integer.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\bulkActionPermissions.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\includeproperties.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\layouts.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\layouts\grid\grid.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\layouts\list\list.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\listview.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\orderDirection.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\listview\sortby.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\macrocontainer\macrocontainer.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\macrocontainer\macrolist.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\markdowneditor\markdowneditor.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\mediapicker\mediapicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\membergrouppicker\membergrouppicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\membergroups\membergroups.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\memberpicker\memberpicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\multipletextbox\multipletextbox.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\nestedcontent\nestedcontent.doctypepicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\nestedcontent\nestedcontent.editor.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\nestedcontent\nestedcontent.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\radiobuttons\radiobuttons.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\readonlyvalue\readonlyvalue.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\relatedlinks\relatedlinks.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\rte\rte.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\rte\rte.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\sensitivevalue\sensitivevalue.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\slider\handle.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\slider\orientation.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\slider\slider.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\slider\tooltip.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\tags\tags.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\tags\tags.prevalues.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\templatepicker\templatepicker.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\test\test.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\textarea\textarea.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\textbox\textbox.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\ultrasimple\ultrasimple.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\urllist\urllist.html" />
+    <Content Include="vitinqpanel\Views\propertyeditors\validationtest\validationtest.html" />
+    <Content Include="vitinqpanel\Views\scripts\create.html" />
+    <Content Include="vitinqpanel\Views\scripts\delete.html" />
+    <Content Include="vitinqpanel\Views\scripts\edit.html" />
+    <Content Include="vitinqpanel\Views\templates\delete.html" />
+    <Content Include="vitinqpanel\Views\templates\edit.html" />
+    <Content Include="vitinqpanel\Views\users\group.html" />
+    <Content Include="vitinqpanel\Views\users\overview.html" />
+    <Content Include="vitinqpanel\Views\users\user.html" />
+    <Content Include="vitinqpanel\Views\users\views\groups\groups.html" />
+    <Content Include="vitinqpanel\Views\users\views\users\users.html" />
+    <Content Include="vitinqpanel\Views\users\views\user\details.html" />
+    <Content Include="vitinqpanel\Webservices\ajax.js" />
+    <Content Include="vitinqpanel\Webservices\CacheRefresher.asmx" />
+    <Content Include="vitinqpanel\Webservices\CheckForUpgrade.asmx" />
+    <Content Include="vitinqpanel\Webservices\CMSNode.asmx" />
+    <Content Include="vitinqpanel\Webservices\codeEditorSave.asmx" />
+    <Content Include="vitinqpanel\Webservices\legacyAjaxCalls.asmx" />
+    <Content Include="vitinqpanel\Webservices\MacroContainerService.asmx" />
+    <Content Include="vitinqpanel\Webservices\nodeSorter.asmx" />
+    <Content Include="vitinqpanel\Webservices\progressStatus.asmx" />
+    <Content Include="vitinqpanel\Webservices\publication.asmx" />
+    <Content Include="vitinqpanel\Webservices\TreeClientService.asmx" />
+    <Content Include="vitinqpanel\Webservices\wsdl.xslt" />
+    <Content Include="vitinqpanel\Xslt\macroGetCurrent.xsl" />
+    <Content Include="vitinqpanel\Xslt\macroGetSubs.xsl" />
+    <Content Include="vitinqpanel\Xslt\searchResult.xslt" />
+    <Content Include="vitinqpanel\Xslt\sqlNodeHierachy.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Breadcrumb.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Clean.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListSubPagesAsThumbnails.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListSubPagesByDateAndLimit.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListSubPagesByDocumentType.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListSubPagesByLevel.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListSubPagesFromAChangableSource.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListSubPagesFromCurrentPage.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListThumbnailsFromCurrentPage.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\ListWholeStructureFromCurrentPage.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\NavigationPrototype.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\RelatedLinks.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\RSSFeed.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\Breadcrumb.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\Clean.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListSubPagesAsThumbnails.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListSubPagesByDateAndLimit.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListSubPagesByDocumentType.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListSubPagesByLevel.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListSubPagesFromAChangableSource.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListSubPagesFromCurrentPage.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListThumbnailsFromCurrentPage.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\ListWholeStructureFromCurrentPage.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\NavigationPrototype.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\RelatedLinks.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\RSSFeed.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\Sitemap.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Schema2\TablePrototype.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\Sitemap.xslt" />
+    <Content Include="vitinqpanel\Xslt\Templates\TablePrototype.xslt" />
+    <Content Include="config\grid.editors.config.js" />
+    <Content Include="config\Lang\cs-CZ.user.xml" />
+    <Content Include="config\Lang\da-DK.user.xml" />
+    <Content Include="config\Lang\de-DE.user.xml" />
+    <Content Include="config\Lang\en-GB.user.xml" />
+    <Content Include="config\Lang\en-US.user.xml" />
+    <Content Include="config\Lang\es-ES.user.xml" />
+    <Content Include="config\Lang\fr-FR.user.xml" />
+    <Content Include="config\Lang\he-IL.user.xml" />
+    <Content Include="config\Lang\it-IT.user.xml" />
+    <Content Include="config\Lang\ja-JP.user.xml" />
+    <Content Include="config\Lang\ko-KR.user.xml" />
+    <Content Include="config\Lang\nb-NO.user.xml" />
+    <Content Include="config\Lang\nl-NL.user.xml" />
+    <Content Include="config\Lang\pl-PL.user.xml" />
+    <Content Include="config\Lang\pt-BR.user.xml" />
+    <Content Include="config\Lang\ru-RU.user.xml" />
+    <Content Include="config\Lang\sv-SE.user.xml" />
+    <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="css\aos.css" />
+    <Content Include="css\bootstrap-datepicker.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap\bootstrap-grid.css" />
+    <Content Include="css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap\bootstrap.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\mediaelementplayer.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="default.aspx" />
+    <Content Include="fonts\flaticon\backup.txt" />
+    <Content Include="fonts\flaticon\font\flaticon.css" />
+    <Content Include="fonts\flaticon\font\flaticon.html" />
+    <Content Include="fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="fonts\icomoon\demo-files\demo.css" />
+    <Content Include="fonts\icomoon\demo-files\demo.js" />
+    <Content Include="fonts\icomoon\demo.html" />
+    <Content Include="fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="fonts\icomoon\Read Me.txt" />
+    <Content Include="fonts\icomoon\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\about_1.jpg" />
+    <Content Include="images\hero_1.jpg" />
+    <Content Include="images\img_1.jpg" />
+    <Content Include="images\img_2.jpg" />
+    <Content Include="images\img_3.jpg" />
+    <Content Include="images\img_4.jpg" />
+    <Content Include="images\img_5.jpg" />
+    <Content Include="images\img_6.jpg" />
+    <Content Include="images\person_1.jpg" />
+    <Content Include="images\person_2.jpg" />
+    <Content Include="images\person_3.jpg" />
+    <Content Include="images\person_4.jpg" />
+    <Content Include="images\person_5.jpg" />
+    <Content Include="scripts\aos.js" />
+    <Content Include="scripts\bootstrap-datepicker.min.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-3.3.1.min.js" />
+    <Content Include="scripts\jquery-migrate-3.0.1.min.js" />
+    <Content Include="scripts\jquery-ui.js" />
+    <Content Include="scripts\jquery.countdown.min.js" />
+    <Content Include="scripts\jquery.magnific-popup.min.js" />
+    <Content Include="scripts\jquery.stellar.min.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\mediaelement-and-player.min.js" />
+    <Content Include="scripts\owl.carousel.min.js" />
+    <Content Include="scripts\popper.min.js" />
+    <Content Include="scripts\slick.min.js" />
+    <Content Include="scripts\typed.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\Models\models.generated.cs" />
+    <Compile Include="ContentFinders\MultilingualContentFinder.cs" />
+    <Compile Include="Controllers\UrlPreviewController.cs" />
+    <Compile Include="Events\UmbracoEvents.cs" />
+    <Compile Include="Extensions\ContentExtensions.cs" />
+    <Compile Include="Extensions\ExtractExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extract\ExtractMenuItem.cs" />
+    <Compile Include="Extract\PropertyExtractResolver.cs" />
+    <Compile Include="Models\Master.cs" />
+    <Compile Include="Models\Multilingual\Extract\Document.cs" />
+    <Compile Include="Models\Multilingual\Extract\DocumentCollection.cs" />
+    <Compile Include="Models\Multilingual\Extract\DocumentProperty.cs" />
+    <Compile Include="Models\Multilingual\Extract\NestedContentProperty.cs" />
+    <Compile Include="Models\Multilingual\Extract\NestedDocument.cs" />
+    <Compile Include="Models\Multilingual\Extract\PropertyExtractBase.cs" />
+    <Compile Include="Models\Multilingual\Extract\SingleNestedContentProperty.cs" />
+    <Compile Include="Models\Multilingual\Extract\TextArrayProperty.cs" />
+    <Compile Include="Models\Multilingual\Extract\TextProperty.cs" />
+    <Compile Include="Models\Multilingual\Extract\VortoContentProperty.cs" />
+    <Compile Include="Models\Multilingual\Extract\VortoStringProperty.cs" />
+    <Compile Include="Models\Multilingual\UrlPreview.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrlProviders\MultilingualUrlProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\imageprocessor\security.config" />
+    <Content Include="config\imageprocessor\processing.config" />
+    <Content Include="config\imageprocessor\cache.config" />
+    <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="Media\Web.config" />
+    <Content Include="config\umbracoSettings.config" />
+    <Content Include="config\trees.config" />
+    <Content Include="config\tinyMceConfig.config" />
+    <Content Include="config\scripting.config" />
+    <Content Include="config\log4net.config" />
+    <Content Include="config\HealthChecks.config" />
+    <Content Include="config\FileSystemProviders.config" />
+    <Content Include="config\feedProxy.config" />
+    <Content Include="config\ExamineSettings.config" />
+    <Content Include="config\ExamineIndex.config" />
+    <Content Include="config\EmbeddedMedia.config" />
+    <Content Include="config\Dashboard.config" />
+    <Content Include="config\ClientDependency.config" />
+    <Content Include="config\BaseRestExtensions.config" />
+    <Content Include="config\BackOfficeTours\getting-started.json" />
+    <Content Include="config\applications.config" />
+    <Content Include="config\404handlers.config" />
+    <Content Include="App_Plugins\Our.Umbraco.UrlPreview\package.manifest" />
+    <Content Include="libman.json" />
+    <Content Include="App_Plugins\Epiphany.SeoMetadata\package.manifest" />
+    <Content Include="vitinqpanel\assets\fonts\helveticons\helveticons.eot" />
+    <Content Include="vitinqpanel\assets\fonts\helveticons\helveticons.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\helveticons\helveticons.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Black.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Black.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Black.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Black.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BlackItalic.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BlackItalic.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BlackItalic.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BlackItalic.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Bold.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Bold.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Bold.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Bold.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BoldItalic.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BoldItalic.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BoldItalic.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-BoldItalic.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Italic.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Italic.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Italic.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Italic.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Light.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Light.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Light.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Light.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-LightItalic.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-LightItalic.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-LightItalic.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-LightItalic.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Regular.eot" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Regular.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Regular.woff" />
+    <Content Include="vitinqpanel\assets\fonts\lato\LatoLatin-Regular.woff2" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Regular-webfont.eot" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Regular-webfont.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Regular-webfont.woff" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Regular.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Semibold-webfont.eot" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Semibold-webfont.ttf" />
+    <Content Include="vitinqpanel\assets\fonts\opensans\OpenSans-Semibold-webfont.woff" />
+    <Content Include="vitinqpanel\assets\fonts\web.config" />
+    <Content Include="vitinqpanel\assets\less\background.less" />
+    <Content Include="vitinqpanel\assets\less\border.less" />
+    <Content Include="vitinqpanel\assets\less\color.less" />
+    <Content Include="vitinqpanel\assets\less\googlefontpicker.less" />
+    <Content Include="vitinqpanel\assets\less\gridRow.less" />
+    <Content Include="vitinqpanel\assets\less\layout.less" />
+    <Content Include="vitinqpanel\assets\less\margin.less" />
+    <Content Include="vitinqpanel\assets\less\padding.less" />
+    <Content Include="vitinqpanel\assets\less\radius.less" />
+    <Content Include="vitinqpanel\assets\less\shadow.less" />
+    <Content Include="vitinqpanel\assets\less\slider.less" />
+    <Content Include="vitinqpanel\Install\Views\Index.cshtml" />
+    <Content Include="vitinqpanel\Install\Views\Web.config" />
+    <Content Include="vitinqpanel\Js\web.config" />
+    <Content Include="vitinqpanel\lib\angular-dynamic-locale\tmhDynamicLocale.min.js.map" />
+    <Content Include="vitinqpanel\lib\angular-local-storage\angular-local-storage.min.js.map" />
+    <Content Include="vitinqpanel\lib\bootstrap-tabdrop\README.md" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\accordion.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\alerts.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\bootstrap.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\breadcrumbs.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\button-groups.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\buttons.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\carousel.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\close.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\code.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\component-animations.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\dropdowns.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\forms.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\grid.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\hero-unit.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\labels-badges.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\layouts.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\media.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\mixins.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\modals.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\navbar.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\navs.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\pager.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\pagination.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\popovers.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\progress-bars.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\reset.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\responsive-1200px-min.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\responsive-767px-max.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\responsive-768px-979px.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\responsive-navbar.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\responsive-utilities.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\responsive.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\scaffolding.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\sprites.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tables.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\thumbnails.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\tooltip.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\type.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\utilities.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\variables.less" />
+    <Content Include="vitinqpanel\lib\bootstrap\less\wells.less" />
+    <Content Include="vitinqpanel\lib\codemirror\mode\razor\LICENSE" />
+    <Content Include="vitinqpanel\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vitinqpanel\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vitinqpanel\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vitinqpanel\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vitinqpanel\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vitinqpanel\lib\jquery\jquery.min.map" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\readme.md" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce-small.eot" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce-small.ttf" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce-small.woff" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce.eot" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce.ttf" />
+    <Content Include="vitinqpanel\lib\tinymce\skins\umbraco\fonts\tinymce.woff" />
+    <Content Include="vitinqpanel\lib\underscore\underscore-min.map" />
+    <Content Include="vitinqpanel\Masterpages\default.Master" />
+    <Content Include="vitinqpanel\Masterpages\umbracoDialog.Master" />
+    <Content Include="vitinqpanel\Masterpages\umbracoPage.Master" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\Breadcrumb.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\EditProfile.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\Empty %28ForUseWithCustomViews%29.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\Empty.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\Gallery.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListAncestorsFromCurrentPage.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListChildPagesFromChangeableSource.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListChildPagesFromCurrentPage.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListChildPagesOrderedByDate.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListChildPagesOrderedByName.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListChildPagesOrderedByProperty.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListChildPagesWithDoctype.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListDescendantsFromCurrentPage.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\ListImagesFromMediaFolder.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\Login.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\LoginStatus.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\MultinodeTree-picker.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\Navigation.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\RegisterMember.cshtml" />
+    <Content Include="vitinqpanel\PartialViewMacros\Templates\SiteMap.cshtml" />
+    <Content Include="vitinqpanel\Search\QuickSearchHandler.ashx" />
+    <Content Include="vitinqpanel\Translation\translationTasks.dtd" />
+    <Content Include="vitinqpanel\Views\AuthorizeUpgrade.cshtml" />
+    <Content Include="vitinqpanel\Views\Default.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Background.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Border.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Color.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Googlefontpicker.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\GridRow.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Index.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Layout.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Margin.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Padding.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Radius.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Shadow.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\Slider.cshtml" />
+    <Content Include="vitinqpanel\Views\Preview\web.config" />
+    <Content Include="vitinqpanel\Webservices\TagsAutoCompleteHandler.ashx" />
+    <Content Include="vitinqpanel\Webservices\TreeDataService.ashx" />
+    <Content Include="vitinqpanel\Xslt\Web.config" />
+    <Content Include="App_Plugins\Simple301\package.manifest" />
+    <Content Include="fonts\.DS_Store" />
+    <Content Include="fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="fonts\flaticon\license\license.pdf" />
+    <Content Include="fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="fonts\icomoon\selection.json" />
+    <Content Include="images\.DS_Store" />
+    <None Include="packages.config" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\Contact.cshtml" />
+    <Content Include="Views\Layout.cshtml" />
+    <Content Include="Views\MainPage.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\Header.cshtml" />
+    <Content Include="Views\Project.cshtml" />
+    <Content Include="Views\Projects.cshtml" />
+    <Content Include="Views\About.cshtml" />
+    <Content Include="Views\Service.cshtml" />
+    <Content Include="Views\Services.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53834</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53834/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.13.2\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.13.2\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.13.2\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.13.2\build\UmbracoCms.targets'))" />
+  </Target>
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <Import Project="..\packages\UmbracoCms.7.13.2\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.13.2\build\UmbracoCms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
